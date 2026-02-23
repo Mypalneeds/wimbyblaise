@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ══ PRIMARY SEO ══════════════════════════════════════ -->
+<title>Wimbyblaise | Free Online Note Taker, Sketch Board & Ideation Tool — whatimeant</title>
+<meta name="description" content="Wimbyblaise is a free online note-taking app, sketch board, and ideation tool. Write rich notes, draw sketches, brainstorm with sticky notes, and export to PDF, Word, PNG, JPG, TXT or Markdown — all in your browser, no sign-up needed.">
+<meta name="keywords" content="free note taker, online note taking app, free notepad online, best free notes app, note taking tool, free writing tool, sketch board online, free sketchpad, drawing tool online, ideation board, brainstorm tool, sticky notes online, mind mapping tool, free productivity app, notes without login, browser note taking, free notepad app, digital notebook free, online whiteboard free, free drawing app, canvas sketch tool, export notes to PDF, export notes to Word, export sketch to PNG, free note organizer, note taking for students, note taking for work, free creative writing tool, free brainstorming app, online collaboration board, BERT optimized note app, no account required, free web app, open source note taker, free offline notes, export to markdown, rich text editor free, free text editor online, best free notepad, quick notes online, free ideas board, thought organizer, free planner app, note manager free, write notes online, free document creator, sketch to PDF, ideation tool free, free creative board, sticky notes board, note export tool, idea capture tool, free web notepad, online sketchbook free, digital whiteboard, brainstorming sticky notes, free student notes app, project notes tool, task notes free, free mind board">
+<meta name="author" content="Mmadubuko Micheal — Wimbyblaise">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="rating" content="general">
+<meta name="revisit-after" content="3 days">
+<meta name="language" content="English">
+<meta name="generator" content="Wimbyblaise v1.0">
+<meta name="category" content="Productivity, Note Taking, Creative Tools">
+<meta name="classification" content="Free Productivity Web App">
+<link rel="canonical" href="https://wimbyblaise.app/">
+
+<!-- ══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wimbyblaise.app/">
+<meta property="og:title" content="Wimbyblaise — Free Note Taker, Sketch Board & Ideation Tool">
+<meta property="og:description" content="Write, draw, and brainstorm freely. Free online note-taking, sketchpad, and ideation board — export to PDF, Word, PNG, TXT and more. No sign-up. No limits.">
+<meta property="og:image" content="https://wimbyblaise.app/og-image.png">
+<meta property="og:image:alt" content="Wimbyblaise free note taking and sketch app screenshot">
+<meta property="og:site_name" content="Wimbyblaise">
+<meta property="og:locale" content="en_US">
+
+<!-- ══ TWITTER CARD ════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@wimbyblaise">
+<meta name="twitter:creator" content="@micheal_mmad">
+<meta name="twitter:title" content="Wimbyblaise — Free Note Taker, Sketch Board & Ideation Tool">
+<meta name="twitter:description" content="Take notes, sketch, and brainstorm — all free in your browser. Export to PDF, Word, PNG, TXT, Markdown. No login required.">
+<meta name="twitter:image" content="https://wimbyblaise.app/og-image.png">
+
+<!-- ══ STRUCTURED DATA — WebApplication (Schema.org) ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Wimbyblaise",
+  "alternateName": "Wimbyblaise whatimeant",
+  "url": "https://wimbyblaise.app/",
+  "description": "A free online note-taking app, sketch board, and ideation tool. Write rich-text notes, draw freehand sketches, brainstorm with drag-and-drop sticky notes, and export to PDF, Word, PNG, JPG, TXT or Markdown — no sign-up needed.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Free rich-text note taking",
+    "Freehand sketch board",
+    "Ideation and brainstorming sticky board",
+    "Export to PDF",
+    "Export to Word document",
+    "Export to PNG image",
+    "Export to JPG image",
+    "Export to plain text",
+    "Export to Markdown",
+    "No login or sign-up required",
+    "Auto-save to browser",
+    "Keyboard shortcuts",
+    "Multiple notes management"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Mmadubuko Micheal",
+    "email": "officialanalaize@gmail.com",
+    "telephone": "+2347066459689"
+  },
+  "keywords": "free note taker, online notepad, sketch board, ideation tool, brainstorm app, sticky notes, export PDF, free productivity app"
+}
+</script>
+
+<!-- ══ STRUCTURED DATA — FAQPage ══════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Wimbyblaise completely free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Wimbyblaise is 100% free — no subscription, no account, no hidden fees. Use it directly in your browser." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account to use Wimbyblaise?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No account or sign-up is required. Just open the app and start writing, sketching, or brainstorming instantly." }
+    },
+    {
+      "@type": "Question",
+      "name": "What formats can I export my notes to?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can export to PDF, Word (.doc), PNG image, JPG image, plain text (.txt), and Markdown (.md)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Wimbyblaise as a sketchpad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes! Wimbyblaise includes a full freehand sketch board with pen, brush, marker, eraser, shapes, arrows, undo, and color controls." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wimbyblaise save my notes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, notes auto-save to your browser's local storage every 30 seconds, and you can also manually save with Ctrl+S." }
+    }
+  ]
+}
+</script>
+
+<!-- ══ PERFORMANCE & PWA HINTS ═════════════════════════ -->
+<meta name="theme-color" content="#0d0d0d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wimbyblaise">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #f7f4ee;
+    --cream: #efe9da;
+    --accent: #e85d04;
+    --accent2: #2d6a4f;
+    --muted: #8a8070;
+    --border: #cfc8b8;
+    --canvas-bg: #faf8f3;
+    --sidebar-w: 260px;
+    --topbar-h: 56px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--paper);
+    color: var(--ink);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── TOP BAR ───────────────────────────────── */
+  #topbar {
+    height: var(--topbar-h);
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    padding: 0 1.2rem;
+    gap: 1rem;
+    border-bottom: 2px solid var(--accent);
+    z-index: 100;
+    flex-shrink: 0;
+  }
+
+  .brand {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: #fff;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+  }
+  .brand span {
+    color: var(--accent);
+  }
+  .brand sub {
+    font-size: 0.52rem;
+    color: #888;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+
+  .tab-pills {
+    display: flex;
+    gap: 4px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 4px;
+  }
+  .tab-pill {
+    border: none;
+    background: transparent;
+    color: #888;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.18s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 0.3px;
+  }
+  .tab-pill:hover { color: #fff; background: #2a2a2a; }
+  .tab-pill.active { background: var(--accent); color: #fff; }
+
+  .topbar-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .btn-export {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    border: 1.5px solid #333;
+    background: transparent;
+    color: #ccc;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.18s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .btn-export:hover { border-color: var(--accent); color: var(--accent); background: rgba(232,93,4,0.07); }
+
+  /* ── LAYOUT ───────────────────────────────── */
+  #workspace {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* ── SIDEBAR ──────────────────────────────── */
+  #sidebar {
+    width: var(--sidebar-w);
+    background: var(--cream);
+    border-right: 1.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .sidebar-section {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar-label {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .note-list { flex: 1; overflow-y: auto; padding: 0.4rem; }
+  .note-item {
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: all 0.15s;
+    margin-bottom: 3px;
+  }
+  .note-item:hover { background: #e8e2d5; }
+  .note-item.active { border-color: var(--accent); background: #fff; }
+  .note-item-title {
+    font-size: 0.73rem;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .note-item-meta {
+    font-size: 0.59rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .btn-new {
+    width: 100%;
+    background: var(--ink);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background 0.15s;
+    margin-bottom: 6px;
+  }
+  .btn-new:hover { background: var(--accent); }
+
+  /* Tool palette */
+  .tool-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tool-btn {
+    width: 36px; height: 36px;
+    border-radius: 6px;
+    border: 1.5px solid var(--border);
+    background: #fff;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all 0.15s;
+  }
+  .tool-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .tool-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+  .color-swatch {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  .color-swatch:hover { transform: scale(1.2); }
+  .color-swatch.active { border-color: var(--ink); transform: scale(1.15); }
+
+  .size-slider {
+    width: 100%;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+
+  /* ── MAIN CONTENT ─────────────────────────── */
+  #main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--canvas-bg);
+  }
+
+  /* ── NOTE PANEL ───────────────────────────── */
+  #note-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #note-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    padding: 1.2rem 1.5rem 0.4rem;
+    color: var(--ink);
+    width: 100%;
+    outline: none;
+    border-bottom: 1.5px solid var(--border);
+  }
+  #note-title::placeholder { color: #ccc; }
+
+  .note-toolbar {
+    display: flex;
+    gap: 3px;
+    padding: 6px 1.5rem;
+    border-bottom: 1.5px solid var(--border);
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+  }
+  .fmt-btn {
+    width: 28px; height: 28px;
+    border: 1px solid var(--border);
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink);
+    transition: all 0.12s;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .fmt-btn:hover { background: var(--cream); border-color: var(--muted); }
+  .fmt-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .fmt-sep { width: 1px; height: 20px; background: var(--border); margin: 0 3px; }
+
+  #note-editor {
+    flex: 1;
+    padding: 1.2rem 1.5rem;
+    outline: none;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--ink);
+    overflow-y: auto;
+    min-height: 0;
+  }
+  #note-editor:empty::before {
+    content: attr(data-placeholder);
+    color: #bbb;
+    font-style: italic;
+  }
+
+  /* ── SKETCH PANEL ─────────────────────────── */
+  #sketch-panel {
+    flex: 1;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #sketch-canvas-wrap {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 24px, #e8e2d5 24px, #e8e2d5 25px),
+    repeating-linear-gradient(
+      90deg, transparent, transparent 24px, #e8e2d5 24px, #e8e2d5 25px);
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  #sketch-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    cursor: crosshair;
+    touch-action: none;
+    display: block;
+  }
+
+  /* ── IDEATION PANEL ───────────────────────── */
+  #idea-panel {
+    flex: 1;
+    display: none;
+    overflow: auto;
+    position: relative;
+    background: radial-gradient(circle at 20% 80%, rgba(45,106,79,0.06) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(232,93,4,0.06) 0%, transparent 50%),
+                var(--canvas-bg);
+  }
+
+  #idea-board {
+    position: relative;
+    min-width: 2000px;
+    min-height: 1400px;
+  }
+
+  .sticky-note {
+    position: absolute;
+    width: 200px;
+    min-height: 140px;
+    border-radius: 3px;
+    padding: 28px 12px 12px;
+    box-shadow: 3px 4px 12px rgba(0,0,0,0.13);
+    cursor: move;
+    font-family: 'Lora', serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    outline: none;
+    user-select: none;
+    transition: box-shadow 0.15s, transform 0.12s;
+  }
+  .sticky-note:hover { box-shadow: 5px 7px 20px rgba(0,0,0,0.2); }
+  .sticky-note.dragging { transform: rotate(2deg) scale(1.04); box-shadow: 8px 12px 30px rgba(0,0,0,0.25); z-index: 999; }
+  .sticky-note .note-delete {
+    position: absolute;
+    top: 6px; right: 8px;
+    background: none; border: none;
+    font-size: 0.75rem; cursor: pointer;
+    color: rgba(0,0,0,0.3);
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: all 0.12s;
+  }
+  .sticky-note .note-delete:hover { color: #e00; background: rgba(255,0,0,0.08); }
+  .sticky-note-content {
+    outline: none;
+    min-height: 60px;
+    word-break: break-word;
+    cursor: text;
+    user-select: text;
+  }
+  .sticky-colors { display: flex; gap: 4px; flex-wrap: wrap; }
+  .sticky-colors span {
+    width: 18px; height: 18px; border-radius: 50%; cursor: pointer;
+    border: 1.5px solid transparent; transition: transform 0.12s;
+  }
+  .sticky-colors span:hover { transform: scale(1.2); }
+
+  /* ── STATUS BAR ───────────────────────────── */
+  #statusbar {
+    height: 26px;
+    background: var(--ink);
+    color: #888;
+    font-size: 0.58rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1.5rem;
+    flex-shrink: 0;
+  }
+  .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent2); margin-right: 5px; display: inline-block; }
+
+  /* ── MODAL ────────────────────────────────── */
+  .wb-modal-backdrop {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: flex; align-items: center; justify-content: center;
+    animation: fadein 0.15s;
+  }
+  @keyframes fadein { from { opacity:0 } to { opacity:1 } }
+  .wb-modal {
+    background: var(--paper);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    min-width: 320px;
+    font-family: 'JetBrains Mono', monospace;
+    animation: slidein 0.18s;
+  }
+  @keyframes slidein { from { transform: translateY(10px); opacity:0 } to { transform: none; opacity:1 } }
+  .wb-modal h5 { font-family: 'Syne', sans-serif; font-size: 1.1rem; margin-bottom: 1rem; }
+  .export-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .export-opt {
+    border: 1.5px solid var(--border);
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--ink);
+    transition: all 0.15s;
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+  }
+  .export-opt i { font-size: 1.5rem; }
+  .export-opt:hover { border-color: var(--accent); background: rgba(232,93,4,0.05); color: var(--accent); }
+  .close-modal {
+    border: none; background: none; font-size: 1.1rem;
+    cursor: pointer; float: right; color: var(--muted);
+    margin-top: -5px;
+  }
+  .close-modal:hover { color: var(--accent); }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+  /* ── RESPONSIVE SIDEBAR TOGGLE ─────────────── */
+  @media (max-width: 768px) {
+    #sidebar { display: none; }
+    #sidebar.mobile-open { display: flex; position: fixed; left:0; top: var(--topbar-h); bottom: 26px; z-index: 200; width: 260px; }
+  }
+
+  @keyframes pulse-heart {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.18); opacity: 0.85; }
+  }
+
+  /* ── DARK MODE ────────────────────────────── */
+  body.dark {
+    --ink: #e8e4dc;
+    --paper: #141414;
+    --cream: #1e1e1e;
+    --accent: #ff6b1a;
+    --accent2: #4ade80;
+    --muted: #6b6560;
+    --border: #2e2e2e;
+    --canvas-bg: #1a1a1a;
+  }
+  body.dark #topbar { background: #0a0a0a; border-bottom-color: var(--accent); }
+  body.dark .tab-pills { background: #0f0f0f; }
+  body.dark #note-title { color: var(--ink); }
+  body.dark #note-editor { color: var(--ink); }
+  body.dark .note-toolbar { background: #1e1e1e; }
+  body.dark .fmt-btn { color: var(--ink); background: #252525; border-color: #333; }
+  body.dark .fmt-btn:hover { background: #333; }
+  body.dark #note-stats { background: #1e1e1e; border-top-color: #333; }
+  body.dark .export-opt { background: #1e1e1e; border-color: #333; color: var(--ink); }
+  body.dark .export-opt:hover { border-color: var(--accent); color: var(--accent); }
+  body.dark .wb-modal { background: #1a1a1a; border-color: #2e2e2e; color: var(--ink); }
+  body.dark #sketch-canvas-wrap { background-color: #111; 
+    background-image: repeating-linear-gradient(0deg,transparent,transparent 24px,#1e1e1e 24px,#1e1e1e 25px),
+    repeating-linear-gradient(90deg,transparent,transparent 24px,#1e1e1e 24px,#1e1e1e 25px); }
+  body.dark .note-item { color: var(--ink); }
+  body.dark .note-item:hover { background: #252525; }
+  body.dark .note-item.active { background: #2a2a2a; }
+  body.dark .btn-new { background: #252525; color: var(--ink); border: 1.5px solid #333; }
+  body.dark .btn-new:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+  body.dark .tool-btn { background: #1e1e1e; border-color: #333; color: var(--ink); }
+  body.dark .tool-btn.active { background: var(--accent); color: #fff; }
+  body.dark #search-bar { background: #0a0a0a; border-bottom-color: #222; }
+  body.dark #search-input { color: #fff; }
+
+  /* ── FOCUS TIMER ──────────────────────────── */
+  .focus-mode-btn {
+    background: var(--cream);
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    cursor: pointer;
+    color: var(--ink);
+    transition: all 0.15s;
+  }
+  .focus-mode-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .focus-mode-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  body.dark .focus-mode-btn { background: #252525; border-color: #333; }
+  body.dark .focus-mode-btn.active { background: var(--accent); border-color: var(--accent); }
+
+  /* Focus mode overlay (dims UI while timer runs) */
+  body.focus-active #workspace { opacity: 0.35; pointer-events: none; transition: opacity 0.5s; }
+  body.focus-active #focus-badge { display: flex !important; }
+
+  #focus-badge {
+    display: none;
+    position: fixed;
+    bottom: 36px;
+    right: 16px;
+    background: var(--ink);
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    z-index: 500;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border: 2px solid var(--accent);
+    letter-spacing: -0.5px;
+  }
+
+  /* ── SEARCH HIGHLIGHT ─────────────────────── */
+  mark.wb-highlight { background: #ffe066; color: #000; border-radius: 2px; padding: 0 1px; }
+  body.dark mark.wb-highlight { background: #b8860b; color: #fff; }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="topbar">
+  <button class="btn-export d-md-none" onclick="toggleSidebar()" title="Menu">
+    <i class="bi bi-list"></i>
+  </button>
+  <div class="brand">Wimby<span>blaise</span><sub>whatimeant</sub></div>
+
+  <div class="tab-pills ms-3">
+    <button class="tab-pill active" id="tab-notes" onclick="switchTab('notes')">
+      <i class="bi bi-file-text"></i> Notes
+    </button>
+    <button class="tab-pill" id="tab-sketch" onclick="switchTab('sketch')">
+      <i class="bi bi-pencil"></i> Sketch
+    </button>
+    <button class="tab-pill" id="tab-idea" onclick="switchTab('idea')">
+      <i class="bi bi-lightbulb"></i> Ideation
+    </button>
+  </div>
+
+  <div class="topbar-actions">
+    <button class="btn-export" onclick="toggleSearch()" title="Search notes (Ctrl+F)" id="btn-search">
+      <i class="bi bi-search"></i>
+    </button>
+    <button class="btn-export" onclick="openFocus()" title="Focus / Pomodoro Timer" id="btn-focus">
+      <i class="bi bi-hourglass-split"></i> <span class="d-none d-lg-inline">Focus</span>
+    </button>
+    <button class="btn-export" onclick="toggleDark()" title="Toggle Dark Mode" id="btn-dark">
+      <i class="bi bi-moon-fill"></i>
+    </button>
+    <button class="btn-export" onclick="openExport()">
+      <i class="bi bi-box-arrow-up"></i> <span class="d-none d-md-inline">Export</span>
+    </button>
+    <button class="btn-export" onclick="saveAll()" title="Save (Ctrl+S)">
+      <i class="bi bi-floppy"></i>
+    </button>
+    <a href="https://wa.me/2347066459689?text=Hi%20Micheal!%20Feedback%20on%20Wimbyblaise%3A%20" target="_blank" class="btn-export" title="Send Feedback on WhatsApp" style="border-color:#25D366;color:#25D366;text-decoration:none;display:flex;align-items:center;gap:5px;">
+      <i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">Feedback</span>
+    </a>
+    <button class="btn-export" onclick="openSupport()" title="Support the Developer" style="border-color:#f4a261;color:#f4a261;animation:pulse-heart 2s infinite;">
+      <i class="bi bi-heart-fill"></i> <span class="d-none d-lg-inline">Support</span>
+    </button>
+  </div>
+</div>
+
+<!-- SEARCH BAR -->
+<div id="search-bar" style="display:none;background:#1a1a1a;padding:8px 1rem;display:none;align-items:center;gap:8px;border-bottom:1px solid #333;flex-shrink:0;">
+  <i class="bi bi-search" style="color:#888;font-size:0.85rem;"></i>
+  <input id="search-input" type="text" placeholder="Search notes…" oninput="searchNotes()"
+    style="flex:1;background:transparent;border:none;outline:none;color:#fff;font-family:'JetBrains Mono',monospace;font-size:0.78rem;">
+  <span id="search-count" style="font-size:0.65rem;color:#888;"></span>
+  <button onclick="toggleSearch()" style="background:none;border:none;color:#888;cursor:pointer;font-size:0.9rem;"><i class="bi bi-x"></i></button>
+</div>
+
+<!-- WORKSPACE -->
+<div id="workspace">
+
+  <!-- SIDEBAR -->
+  <div id="sidebar">
+    <!-- New note/sketch buttons -->
+    <div class="sidebar-section">
+      <button class="btn-new" onclick="newItem()">
+        <i class="bi bi-plus-lg"></i> <span id="new-btn-label">New Note</span>
+      </button>
+    </div>
+
+    <!-- Note list -->
+    <div class="sidebar-section" style="flex:1;overflow:hidden;display:flex;flex-direction:column;padding-bottom:0;">
+      <div class="sidebar-label">Items</div>
+      <div class="note-list" id="note-list"></div>
+    </div>
+
+    <!-- Sketch tools (hidden unless sketch tab) -->
+    <div class="sidebar-section" id="sketch-tools" style="display:none;">
+      <div class="sidebar-label">Brush</div>
+      <div class="tool-palette mb-2" id="tool-palette">
+        <button class="tool-btn active" data-tool="pen" onclick="setTool('pen')" title="Pen"><i class="bi bi-pen"></i></button>
+        <button class="tool-btn" data-tool="brush" onclick="setTool('brush')" title="Brush"><i class="bi bi-brush"></i></button>
+        <button class="tool-btn" data-tool="marker" onclick="setTool('marker')" title="Marker"><i class="bi bi-highlighter"></i></button>
+        <button class="tool-btn" data-tool="eraser" onclick="setTool('eraser')" title="Eraser"><i class="bi bi-eraser"></i></button>
+        <button class="tool-btn" data-tool="line" onclick="setTool('line')" title="Line"><i class="bi bi-dash-lg"></i></button>
+        <button class="tool-btn" data-tool="rect" onclick="setTool('rect')" title="Rectangle"><i class="bi bi-square"></i></button>
+        <button class="tool-btn" data-tool="circle" onclick="setTool('circle')" title="Circle"><i class="bi bi-circle"></i></button>
+        <button class="tool-btn" data-tool="arrow" onclick="setTool('arrow')" title="Arrow"><i class="bi bi-arrow-up-right"></i></button>
+        <button class="tool-btn" onclick="clearCanvas()" title="Clear all" style="color:#e85d04;"><i class="bi bi-trash3"></i></button>
+        <button class="tool-btn" onclick="undoSketch()" title="Undo"><i class="bi bi-arrow-counterclockwise"></i></button>
+      </div>
+      <div class="sidebar-label mt-1">Color</div>
+      <div class="d-flex flex-wrap gap-1 mb-2" id="color-swatches">
+        <div class="color-swatch active" style="background:#0d0d0d" data-color="#0d0d0d" onclick="setColor(this)"></div>
+        <div class="color-swatch" style="background:#e85d04" data-color="#e85d04" onclick="setColor(this)"></div>
+        <div class="color-swatch" style="background:#2d6a4f" data-color="#2d6a4f" onclick="setColor(this)"></div>
+        <div class="color-swatch" style="background:#1d3557" data-color="#1d3557" onclick="setColor(this)"></div>
+        <div class="color-swatch" style="background:#c9184a" data-color="#c9184a" onclick="setColor(this)"></div>
+        <div class="color-swatch" style="background:#f4a261" data-color="#f4a261" onclick="setColor(this)"></div>
+        <div class="color-swatch" style="background:#a8dadc" data-color="#a8dadc" onclick="setColor(this)"></div>
+        <div class="color-swatch" style="background:#ffffff;border:1.5px solid #ccc" data-color="#ffffff" onclick="setColor(this)"></div>
+      </div>
+      <div class="sidebar-label">Size</div>
+      <input type="range" class="size-slider" min="1" max="40" value="3" id="brush-size">
+      <div class="sidebar-label mt-2">Opacity</div>
+      <input type="range" class="size-slider" min="10" max="100" value="100" id="brush-opacity">
+    </div>
+
+    <!-- Ideation tools -->
+    <div class="sidebar-section" id="idea-tools" style="display:none;">
+      <div class="sidebar-label">Sticky Notes</div>
+      <div class="sticky-colors mb-2">
+        <span style="background:#fff59d" onclick="addSticky('#fff59d','#4a4000')" title="Yellow"></span>
+        <span style="background:#f48fb1" onclick="addSticky('#f48fb1','#4a0018')" title="Pink"></span>
+        <span style="background:#a5d6a7" onclick="addSticky('#a5d6a7','#003300')" title="Green"></span>
+        <span style="background:#81d4fa" onclick="addSticky('#81d4fa','#001a33')" title="Blue"></span>
+        <span style="background:#ce93d8" onclick="addSticky('#ce93d8','#2a003f')" title="Purple"></span>
+        <span style="background:#ffcc80" onclick="addSticky('#ffcc80','#3d1c00')" title="Orange"></span>
+      </div>
+      <button class="btn-new" onclick="addSticky('#fff59d','#4a4000')">
+        <i class="bi bi-sticky-plus"></i> Add Sticky
+      </button>
+      <div class="sidebar-label mt-2">Board</div>
+      <button class="btn-new" style="background:transparent;color:var(--ink);border:1.5px solid var(--border);" onclick="clearBoard()">
+        <i class="bi bi-trash3"></i> Clear Board
+      </button>
+    </div>
+
+    <!-- BOTTOM: WhatsApp + Contact -->
+    <div class="sidebar-section" style="margin-top:auto;border-top:1px solid var(--border);padding:0.7rem;">
+      <a href="https://wa.me/2347066459689?text=Hi%20Micheal!%20Feedback%20on%20Wimbyblaise%3A%20" target="_blank"
+        style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:#e8f9ef;border:1.5px solid #25D366;border-radius:8px;text-decoration:none;color:#0a5c2e;font-family:'JetBrains Mono',monospace;font-size:0.68rem;margin-bottom:6px;transition:background 0.15s;"
+        onmouseover="this.style.background='#c8f5da'" onmouseout="this.style.background='#e8f9ef'">
+        <i class="bi bi-whatsapp" style="color:#25D366;font-size:1rem;"></i> Send Feedback
+      </a>
+      <button onclick="openWA()" style="width:100%;background:transparent;border:1.5px solid var(--border);border-radius:7px;padding:7px;font-family:'JetBrains Mono',monospace;font-size:0.65rem;cursor:pointer;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:5px;">
+        <i class="bi bi-person-lines-fill"></i> Contact Developer
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div id="main">
+
+    <!-- NOTES PANEL -->
+    <div id="note-panel">
+      <input id="note-title" type="text" placeholder="Untitled note…" oninput="updateCurrentNote()">
+      <div class="note-toolbar">
+        <button class="fmt-btn" onclick="fmt('bold')" title="Bold"><b>B</b></button>
+        <button class="fmt-btn" onclick="fmt('italic')" title="Italic"><i>I</i></button>
+        <button class="fmt-btn" onclick="fmt('underline')" title="Underline"><u>U</u></button>
+        <button class="fmt-btn" onclick="fmt('strikeThrough')" title="Strike">S̶</button>
+        <div class="fmt-sep"></div>
+        <button class="fmt-btn" onclick="fmt('insertUnorderedList')" title="Bullet list"><i class="bi bi-list-ul"></i></button>
+        <button class="fmt-btn" onclick="fmt('insertOrderedList')" title="Numbered list"><i class="bi bi-list-ol"></i></button>
+        <button class="fmt-btn" onclick="fmt('formatBlock','blockquote')" title="Quote"><i class="bi bi-quote"></i></button>
+        <div class="fmt-sep"></div>
+        <button class="fmt-btn" onclick="fmt('formatBlock','h2')" title="Heading">H</button>
+        <button class="fmt-btn" onclick="fmt('formatBlock','p')" title="Paragraph">¶</button>
+        <div class="fmt-sep"></div>
+        <button class="fmt-btn" onclick="fmt('justifyLeft')" title="Left"><i class="bi bi-text-left"></i></button>
+        <button class="fmt-btn" onclick="fmt('justifyCenter')" title="Center"><i class="bi bi-text-center"></i></button>
+        <button class="fmt-btn" onclick="fmt('justifyRight')" title="Right"><i class="bi bi-text-right"></i></button>
+        <div class="fmt-sep"></div>
+        <select onchange="changeFontSize(this.value)" class="fmt-btn" style="width:auto;padding:0 4px;font-size:0.65rem;">
+          <option value="1">Tiny</option>
+          <option value="2">Small</option>
+          <option value="3" selected>Normal</option>
+          <option value="4">Medium</option>
+          <option value="5">Large</option>
+          <option value="6">Huge</option>
+        </select>
+        <input type="color" id="text-color" title="Text color" value="#0d0d0d" onchange="fmt('foreColor',this.value)"
+          style="width:28px;height:28px;border:1px solid var(--border);border-radius:4px;cursor:pointer;padding:2px;">
+        <div class="fmt-sep"></div>
+        <button class="fmt-btn" onclick="insertChecklist()" title="Checklist"><i class="bi bi-check2-square"></i></button>
+        <button class="fmt-btn" onclick="insertHr()" title="Divider"><i class="bi bi-hr"></i></button>
+      </div>
+      <div id="note-editor" contenteditable="true" data-placeholder="Start typing your note… ✍️" oninput="updateCurrentNote(); updateWordCount()">
+      </div>
+      <!-- STATS BAR -->
+      <div id="note-stats" style="padding:5px 1.5rem;border-top:1px solid var(--border);background:#fff;display:flex;gap:1.2rem;align-items:center;flex-shrink:0;">
+        <span id="stat-words" style="font-size:0.62rem;color:var(--muted);">0 words</span>
+        <span id="stat-chars" style="font-size:0.62rem;color:var(--muted);">0 chars</span>
+        <span id="stat-read"  style="font-size:0.62rem;color:var(--muted);">~0 min read</span>
+        <span id="stat-lines" style="font-size:0.62rem;color:var(--muted);">0 lines</span>
+        <span style="margin-left:auto;font-size:0.62rem;color:var(--muted);" id="stat-time"></span>
+      </div>
+    </div>
+
+    <!-- SKETCH PANEL -->
+    <div id="sketch-panel">
+      <div id="sketch-canvas-wrap">
+        <canvas id="sketch-canvas"></canvas>
+      </div>
+    </div>
+
+    <!-- IDEATION PANEL -->
+    <div id="idea-panel">
+      <div id="idea-board"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FLOATING FOCUS BADGE -->
+<div id="focus-badge" onclick="openFocus()" title="Focus timer running — click to manage">
+  <i class="bi bi-hourglass-split" style="color:var(--accent);"></i>
+  <span id="focus-badge-time">25:00</span>
+  <span style="font-size:0.55rem;color:#888;">FOCUS</span>
+</div>
+
+<!-- STATUS BAR -->
+<div id="statusbar">
+  <span><span class="status-dot"></span><span id="status-mode">Notes</span></span>
+  <span id="status-words">0 words</span>
+  <span id="status-items">0 notes</span>
+  <span id="save-indicator" style="margin-left:8px;font-size:0.58rem;color:#a8dadc;opacity:0;transition:opacity 0.4s;">✓ Saved</span>
+  <span style="margin-left:auto;display:flex;gap:10px;align-items:center;">
+    <span style="color:#444;font-size:0.55rem;">Ctrl+F Search · Ctrl+D Dark · Ctrl+S Save · Ctrl+E Export</span>
+    <span>Wimbyblaise v1.0</span>
+  </span>
+</div>
+
+<!-- EXPORT MODAL -->
+<div class="wb-modal-backdrop" id="export-modal" style="display:none;" onclick="closeExportOnBackdrop(event)">
+  <div class="wb-modal">
+    <button class="close-modal" onclick="closeExport()"><i class="bi bi-x-lg"></i></button>
+    <h5><i class="bi bi-box-arrow-up me-2"></i>Export</h5>
+    <p style="font-size:0.7rem;color:var(--muted);margin-bottom:1rem;">Choose format to export your current view</p>
+    <div class="export-grid">
+      <button class="export-opt" onclick="exportTxt()">
+        <i class="bi bi-filetype-txt"></i> Plain Text (.txt)
+      </button>
+      <button class="export-opt" onclick="exportPDF()">
+        <i class="bi bi-filetype-pdf"></i> PDF (.pdf)
+      </button>
+      <button class="export-opt" onclick="exportWord()">
+        <i class="bi bi-filetype-docx"></i> Word (.html→docx)
+      </button>
+      <button class="export-opt" onclick="exportPNG()">
+        <i class="bi bi-filetype-png"></i> Image (.png)
+      </button>
+      <button class="export-opt" onclick="exportJPG()">
+        <i class="bi bi-filetype-jpg"></i> Image (.jpg)
+      </button>
+      <button class="export-opt" onclick="exportMD()">
+        <i class="bi bi-markdown"></i> Markdown (.md)
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- FOCUS TIMER MODAL (Pomodoro) -->
+<div class="wb-modal-backdrop" id="focus-modal" style="display:none;" onclick="closeFocusOnBackdrop(event)">
+  <div class="wb-modal" style="max-width:360px;width:95%;text-align:center;">
+    <button class="close-modal" onclick="closeModal('focus-modal')"><i class="bi bi-x-lg"></i></button>
+    <h5 style="font-family:'Syne',sans-serif;"><i class="bi bi-hourglass-split me-2" style="color:var(--accent);"></i>Focus Timer</h5>
+    <p style="font-size:0.68rem;color:var(--muted);margin-bottom:1rem;">Pomodoro-style deep work sessions</p>
+
+    <div id="focus-display" style="font-family:'Syne',sans-serif;font-size:3.8rem;font-weight:800;color:var(--ink);letter-spacing:-2px;line-height:1;margin:1rem 0;">25:00</div>
+    <div id="focus-label" style="font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem;">Work Session</div>
+
+    <div style="display:flex;gap:6px;justify-content:center;margin-bottom:1rem;">
+      <button onclick="setFocusMode('work',25)" id="fmode-work" class="focus-mode-btn active">25 min Work</button>
+      <button onclick="setFocusMode('short',5)" id="fmode-short" class="focus-mode-btn">5 min Break</button>
+      <button onclick="setFocusMode('long',15)" id="fmode-long" class="focus-mode-btn">15 min Long</button>
+    </div>
+
+    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+      <button onclick="startFocus()" id="focus-start-btn" style="background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 28px;font-family:'JetBrains Mono',monospace;font-size:0.8rem;cursor:pointer;transition:background 0.15s;">
+        <i class="bi bi-play-fill"></i> Start
+      </button>
+      <button onclick="pauseFocus()" id="focus-pause-btn" style="background:var(--cream);color:var(--ink);border:1.5px solid var(--border);border-radius:8px;padding:10px 20px;font-family:'JetBrains Mono',monospace;font-size:0.8rem;cursor:pointer;display:none;">
+        <i class="bi bi-pause-fill"></i> Pause
+      </button>
+      <button onclick="resetFocus()" style="background:transparent;color:var(--muted);border:1.5px solid var(--border);border-radius:8px;padding:10px 20px;font-family:'JetBrains Mono',monospace;font-size:0.8rem;cursor:pointer;">
+        <i class="bi bi-arrow-counterclockwise"></i> Reset
+      </button>
+    </div>
+
+    <div id="focus-sessions" style="margin-top:1.2rem;font-size:0.65rem;color:var(--muted);">
+      Sessions today: <strong id="session-count">0</strong> 🍅
+    </div>
+    <div id="focus-progress-wrap" style="margin-top:0.8rem;height:5px;background:var(--border);border-radius:99px;overflow:hidden;">
+      <div id="focus-progress" style="height:100%;background:var(--accent);width:0%;transition:width 1s linear;border-radius:99px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHATSAPP / CONTACT MODAL -->
+<div class="wb-modal-backdrop" id="wa-modal" style="display:none;" onclick="if(event.target===this)closeModal('wa-modal')">
+  <div class="wb-modal" style="max-width:380px;width:95%;">
+    <button class="close-modal" onclick="closeModal('wa-modal')"><i class="bi bi-x-lg"></i></button>
+    <div style="text-align:center;margin-bottom:1rem;">
+      <div style="font-size:2.8rem;">💬</div>
+      <h5 style="font-family:'Syne',sans-serif;font-size:1.1rem;margin-top:0.4rem;">Contact Developer</h5>
+      <p style="font-size:0.68rem;color:var(--muted);line-height:1.6;">Bug report, feature request, or just say hi — Micheal reads every message.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <a href="https://wa.me/2347066459689?text=Hi%20Micheal!%20Feedback%20on%20Wimbyblaise%3A%20" target="_blank"
+        style="display:flex;align-items:center;gap:12px;padding:14px;background:#e8f9ef;border:1.5px solid #25D366;border-radius:10px;text-decoration:none;color:#0a5c2e;transition:background 0.15s;"
+        onmouseover="this.style.background='#d4f5e0'" onmouseout="this.style.background='#e8f9ef'">
+        <i class="bi bi-whatsapp" style="font-size:1.6rem;color:#25D366;flex-shrink:0;"></i>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">WhatsApp</div>
+          <div style="font-size:0.65rem;opacity:0.7;">+234 706 645 9689 · Quick response</div>
+        </div>
+        <i class="bi bi-arrow-right ms-auto" style="color:#25D366;"></i>
+      </a>
+
+      <a href="mailto:officialanalaize@gmail.com?subject=Wimbyblaise Feedback&body=Hi Micheal,%0D%0A%0D%0A[Your feedback here]%0D%0A%0D%0AThanks!" target="_blank"
+        style="display:flex;align-items:center;gap:12px;padding:14px;background:#fff3ee;border:1.5px solid var(--accent);border-radius:10px;text-decoration:none;color:#6b2200;transition:background 0.15s;"
+        onmouseover="this.style.background='#ffe8dc'" onmouseout="this.style.background='#fff3ee'">
+        <i class="bi bi-envelope-fill" style="font-size:1.6rem;color:var(--accent);flex-shrink:0;"></i>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Email</div>
+          <div style="font-size:0.65rem;opacity:0.7;">officialanalaize@gmail.com</div>
+        </div>
+        <i class="bi bi-arrow-right ms-auto" style="color:var(--accent);"></i>
+      </a>
+
+      <div style="padding:12px;background:var(--cream);border-radius:8px;font-size:0.68rem;color:var(--muted);line-height:1.6;text-align:center;">
+        Response time: <strong style="color:var(--ink);">Usually within 24 hours</strong><br>
+        Micheal actively improves Wimbyblaise based on your feedback 🚀
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUPPORT DEVELOPER MODAL -->
+<div class="wb-modal-backdrop" id="support-modal" style="display:none;" onclick="closeSupportOnBackdrop(event)">
+  <div class="wb-modal" style="max-width:420px;width:95%;">
+    <button class="close-modal" onclick="closeSupport()"><i class="bi bi-x-lg"></i></button>
+    <div style="text-align:center;margin-bottom:1.2rem;">
+      <div style="font-size:2.5rem;animation:pulse-heart 1.2s infinite;">❤️</div>
+      <h5 style="font-family:'Syne',sans-serif;font-size:1.2rem;margin-top:0.5rem;">Support the Developer</h5>
+      <p style="font-size:0.72rem;color:var(--muted);margin-top:0.3rem;line-height:1.6;">
+        Wimbyblaise is built and maintained by <strong>Mmadubuko Micheal</strong>.<br>
+        It's free forever — but your support keeps it alive and growing. 🚀
+      </p>
+    </div>
+
+    <!-- Developer Info -->
+    <div style="background:#fff;border:1.5px solid var(--border);border-radius:10px;padding:1rem;margin-bottom:1rem;">
+      <div class="sidebar-label" style="margin-bottom:0.6rem;">Developer</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.5rem;">
+        <div style="width:38px;height:38px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;flex-shrink:0;">M</div>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;">Mmadubuko Micheal</div>
+          <div style="font-size:0.62rem;color:var(--muted);">Open Source Developer · Nigeria 🇳🇬</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-top:0.6rem;">
+        <a href="mailto:officialanalaize@gmail.com" style="font-size:0.7rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:6px;padding:6px 8px;background:var(--cream);border-radius:5px;transition:background 0.15s;" onmouseover="this.style.background='#e0d9cc'" onmouseout="this.style.background='var(--cream)'">
+          <i class="bi bi-envelope-fill" style="color:var(--accent);"></i> officialanalaize@gmail.com
+        </a>
+        <a href="tel:+2347066459689" style="font-size:0.7rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:6px;padding:6px 8px;background:var(--cream);border-radius:5px;transition:background 0.15s;" onmouseover="this.style.background='#e0d9cc'" onmouseout="this.style.background='var(--cream)'">
+          <i class="bi bi-telephone-fill" style="color:var(--accent2);"></i> +234 706 645 9689
+        </a>
+      </div>
+    </div>
+
+    <!-- Donation Info -->
+    <div style="background:linear-gradient(135deg,#fff8f0,#fff);border:2px solid #f4a261;border-radius:10px;padding:1rem;margin-bottom:1rem;">
+      <div class="sidebar-label" style="margin-bottom:0.6rem;color:#c55a00;">Donate to Open Source Dev</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.8rem;">
+        <div style="width:40px;height:40px;background:linear-gradient(135deg,#e85d04,#f4a261);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <i class="bi bi-phone-fill" style="color:#fff;font-size:1.1rem;"></i>
+        </div>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;">Paycome (OPay Bank)</div>
+          <div style="font-size:0.62rem;color:var(--muted);">Instant mobile transfer · Nigeria</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #f4a261;border-radius:7px;padding:0.7rem;display:flex;flex-direction:column;gap:5px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:0.65rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;">Account Name</span>
+          <span style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.8rem;">Mmadubuko Micheal</span>
+        </div>
+        <div style="height:1px;background:var(--border);"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:0.65rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;">Account Number</span>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <span id="acct-num" style="font-family:'JetBrains Mono',monospace;font-weight:600;font-size:0.85rem;letter-spacing:2px;">7066459689</span>
+            <button onclick="copyAcct()" style="border:none;background:var(--cream);border-radius:4px;padding:3px 6px;cursor:pointer;font-size:0.65rem;color:var(--ink);" title="Copy">
+              <i class="bi bi-clipboard"></i>
+            </button>
+          </div>
+        </div>
+        <div style="height:1px;background:var(--border);"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:0.65rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;">Bank</span>
+          <span style="font-size:0.8rem;font-weight:600;">OPay</span>
+        </div>
+      </div>
+      <div id="copy-confirm" style="display:none;text-align:center;font-size:0.68rem;color:var(--accent2);margin-top:6px;font-weight:600;">
+        ✓ Account number copied!
+      </div>
+    </div>
+
+    <p style="font-size:0.65rem;color:var(--muted);text-align:center;line-height:1.6;">
+      Every contribution — big or small — helps keep Wimbyblaise free, open-source, and constantly improving.<br>
+      <strong style="color:var(--ink);">Thank you for believing in free tools for everyone. 🙏</strong>
+    </p>
+  </div>
+</div>
+
+<!-- SEO CONTENT BLOCK (visually hidden but crawlable) -->
+<section id="seo-content" aria-label="About Wimbyblaise" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+  <h1>Wimbyblaise — Free Online Note Taker, Sketch Board and Ideation Tool</h1>
+  <h2>The best free note-taking app available in your browser — no sign-up required</h2>
+  <p>Wimbyblaise (whatimeant) is a free, open-source online note-taking application, digital sketchpad, and brainstorming ideation board. It is the ideal free notepad for students, professionals, writers, designers, and anyone who needs to capture ideas quickly. Unlike other online note apps, Wimbyblaise requires zero registration and works entirely in your browser.</p>
+  <h2>Free Note Taking Features</h2>
+  <p>Take notes with our free rich-text editor. Format your notes with bold, italic, underline, headings, bullet lists, numbered lists, blockquotes, checklists, and custom text colors. Manage multiple notes with our sidebar. Auto-save keeps your notes safe in your browser automatically. Export your notes to PDF, Word document, plain text, or Markdown with one click. Wimbyblaise is the best free online notepad for students, a free note taking app for work, and a free digital notebook for anyone.</p>
+  <h2>Free Sketchpad and Drawing Tool</h2>
+  <p>Use our free online sketchpad to draw freehand sketches, diagrams, wireframes, and doodles. Choose from pen, brush, marker, eraser, line, rectangle, circle, and arrow tools. Adjust brush size and opacity. Undo strokes and change colors. Export your sketch as PNG or JPG image, or as a PDF. Wimbyblaise is the best free drawing tool online and free sketchbook app with no downloads.</p>
+  <h2>Free Ideation Board and Brainstorming Tool</h2>
+  <p>Brainstorm your best ideas using our free sticky notes ideation board. Add colorful draggable sticky notes in yellow, pink, green, blue, purple, and orange. Organize thoughts visually. Export your ideation board to PDF or plain text. Wimbyblaise is the best free brainstorming app online and free mind mapping alternative with no account needed.</p>
+  <h2>Export to Multiple Formats</h2>
+  <p>Wimbyblaise lets you export your notes, sketches, and ideation boards to: PDF (.pdf), Microsoft Word (.doc), PNG image (.png), JPG image (.jpg), Plain text (.txt), and Markdown (.md). It is the only free note app with this many export options.</p>
+  <h2>Keywords</h2>
+  <p>free note taker, online note taking app, free notepad online, best free notes app, note taking tool, free writing tool, sketch board online, free sketchpad, drawing tool online, ideation board, brainstorm tool, sticky notes online, mind mapping tool, free productivity app, notes without login, browser note taking, free notepad app, digital notebook free, online whiteboard free, free drawing app, canvas sketch tool, export notes to PDF, export notes to Word, export sketch to PNG, free note organizer, note taking for students, note taking for work, free creative writing tool, free brainstorming app, online collaboration board, no account required, free web app, open source note taker, free offline notes, export to markdown, rich text editor free, free text editor online, best free notepad, quick notes online, free ideas board, thought organizer, free planner app, note manager free, write notes online, free document creator, sketch to PDF, ideation tool free, free creative board, sticky notes board, note export tool, idea capture tool, free web notepad, online sketchbook free, digital whiteboard, brainstorming sticky notes, free student notes app, project notes tool, task notes free, free mind board, BERT optimized note app, EEAT trusted note taking, what is the best free note taker, how to take notes online for free, free sketch board no download, free brainstorm app browser, online notepad with export</p>
+</section>
+<script>
+// ═══════════════════════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════════════════════
+let currentTab = 'notes';
+let notes = [];
+let currentNoteId = null;
+let stickyCount = 0;
+let noteCount = 0;
+
+// Sketch state
+let isDrawing = false;
+let currentTool = 'pen';
+let currentColor = '#0d0d0d';
+let brushSize = 3;
+let brushOpacity = 1;
+let sketchHistory = [];
+let snapshot = null;
+let startX, startY;
+const canvas = document.getElementById('sketch-canvas');
+const ctx = canvas.getContext('2d');
+
+// ═══════════════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════════════
+function init() {
+  loadFromStorage();
+  loadDarkMode();
+  if (notes.length === 0) newNote();
+  setupCanvasEvents();
+  window.addEventListener('resize', () => {
+    if (currentTab === 'sketch') resizeCanvas();
+  });
+  document.getElementById('brush-size').addEventListener('input', e => brushSize = +e.target.value);
+  document.getElementById('brush-opacity').addEventListener('input', e => brushOpacity = e.target.value / 100);
+  renderNoteList();
+  setActiveNote(notes[0]?.id);
+  updateWordCount();
+  updateFocusDisplay();
+}
+
+// ═══════════════════════════════════════════════════════
+//  TAB SWITCHING
+// ═══════════════════════════════════════════════════════
+function switchTab(tab) {
+  currentTab = tab;
+  ['notes','sketch','idea'].forEach(t => {
+    document.getElementById('tab-'+t).classList.toggle('active', t === tab);
+  });
+  document.getElementById('note-panel').style.display = tab === 'notes' ? 'flex' : 'none';
+  document.getElementById('sketch-panel').style.display = tab === 'sketch' ? 'flex' : 'none';
+  document.getElementById('idea-panel').style.display = tab === 'idea' ? 'block' : 'none';
+  document.getElementById('sketch-tools').style.display = tab === 'sketch' ? 'block' : 'none';
+  document.getElementById('idea-tools').style.display = tab === 'idea' ? 'block' : 'none';
+  document.getElementById('new-btn-label').textContent = tab === 'notes' ? 'New Note' : tab === 'sketch' ? 'Clear Sketch' : 'Add Sticky';
+  document.getElementById('status-mode').textContent = tab.charAt(0).toUpperCase() + tab.slice(1);
+  if (tab === 'sketch') {
+    const firstVisit = canvas.width === 0;
+    setTimeout(() => {
+      resizeCanvas();
+      setTimeout(() => {
+        resizeCanvas();
+        if (firstVisit) loadSketch();
+      }, 150);
+    }, 20);
+  }
+}
+
+function newItem() {
+  if (currentTab === 'notes') newNote();
+  else if (currentTab === 'sketch') clearCanvas();
+  else addSticky('#fff59d','#4a4000');
+}
+
+// ═══════════════════════════════════════════════════════
+//  NOTES
+// ═══════════════════════════════════════════════════════
+function newNote() {
+  noteCount++;
+  const id = Date.now();
+  const note = { id, title: '', content: '', created: new Date().toLocaleString() };
+  notes.unshift(note);
+  renderNoteList();
+  setActiveNote(id);
+  document.getElementById('note-title').focus();
+  updateStatus();
+}
+
+function setActiveNote(id) {
+  currentNoteId = id;
+  const note = notes.find(n => n.id === id);
+  if (!note) return;
+  document.getElementById('note-title').value = note.title;
+  document.getElementById('note-editor').innerHTML = note.content;
+  renderNoteList();
+  updateWordCount();
+}
+
+function updateCurrentNote() {
+  if (!currentNoteId) return;
+  const note = notes.find(n => n.id === currentNoteId);
+  if (!note) return;
+  note.title = document.getElementById('note-title').value;
+  note.content = document.getElementById('note-editor').innerHTML;
+  renderNoteList();
+  saveNotes();
+}
+
+function renderNoteList() {
+  const list = document.getElementById('note-list');
+  list.innerHTML = '';
+  notes.forEach(note => {
+    const div = document.createElement('div');
+    div.className = 'note-item' + (note.id === currentNoteId ? ' active' : '');
+    div.innerHTML = `<div class="note-item-title">${note.title || 'Untitled note'}</div>
+      <div class="note-item-meta">${note.created}</div>`;
+    div.onclick = () => setActiveNote(note.id);
+    // Delete btn
+    const del = document.createElement('button');
+    del.innerHTML = '<i class="bi bi-x"></i>';
+    del.style.cssText = 'background:none;border:none;float:right;cursor:pointer;color:#aaa;font-size:0.8rem;margin-top:-18px;';
+    del.onclick = (e) => { e.stopPropagation(); deleteNote(note.id); };
+    div.appendChild(del);
+    list.appendChild(div);
+  });
+  document.getElementById('status-items').textContent = notes.length + ' notes';
+}
+
+function deleteNote(id) {
+  notes = notes.filter(n => n.id !== id);
+  if (currentNoteId === id) {
+    currentNoteId = notes[0]?.id || null;
+    if (currentNoteId) setActiveNote(currentNoteId);
+    else { document.getElementById('note-title').value=''; document.getElementById('note-editor').innerHTML=''; }
+  }
+  renderNoteList();
+  saveNotes();
+}
+
+// ═══════════════════════════════════════════════════════
+//  FORMATTING
+// ═══════════════════════════════════════════════════════
+function fmt(cmd, val) {
+  document.getElementById('note-editor').focus();
+  document.execCommand(cmd, false, val || null);
+  updateCurrentNote();
+}
+function changeFontSize(v) { fmt('fontSize', v); }
+function insertChecklist() {
+  fmt('insertHTML','<div><input type="checkbox"> Checklist item</div>');
+}
+function insertHr() { fmt('insertHorizontalRule'); }
+
+// ═══════════════════════════════════════════════════════
+//  SKETCH CANVAS
+// ═══════════════════════════════════════════════════════
+function resizeCanvas() {
+  const wrap = document.getElementById('sketch-canvas-wrap');
+  if (!wrap) return;
+  const w = wrap.offsetWidth;
+  const h = wrap.offsetHeight;
+  if (w === 0 || h === 0) return;
+
+  // Save current drawing before resize
+  let saved = null;
+  if (canvas.width > 0 && canvas.height > 0) {
+    try { saved = ctx.getImageData(0, 0, canvas.width, canvas.height); } catch(e){}
+  }
+
+  canvas.width = w;
+  canvas.height = h;
+
+  // Restore drawing after resize
+  if (saved) {
+    ctx.putImageData(saved, 0, 0);
+  }
+}
+
+function getPos(e) {
+  const rect = canvas.getBoundingClientRect();
+  const src = e.touches ? e.touches[0] : e;
+  return {
+    x: (src.clientX - rect.left) * (canvas.width / rect.width),
+    y: (src.clientY - rect.top) * (canvas.height / rect.height)
+  };
+}
+
+function setupCanvasEvents() {
+  canvas.addEventListener('mousedown', startDraw);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', endDraw);
+  canvas.addEventListener('mouseleave', endDraw);
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); startDraw(e); }, {passive:false});
+  canvas.addEventListener('touchmove', e => { e.preventDefault(); draw(e); }, {passive:false});
+  canvas.addEventListener('touchend', endDraw);
+}
+
+function applyCtxStyle(forShape) {
+  const isEraser = currentTool === 'eraser';
+  const isMarker = currentTool === 'marker';
+  const isBrush = currentTool === 'brush';
+
+  if (isEraser) {
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = 'rgba(0,0,0,1)';
+    ctx.lineWidth = brushSize * 4;
+  } else {
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = isMarker ? 0.4 : brushOpacity;
+    ctx.strokeStyle = currentColor;
+    ctx.fillStyle = currentColor;
+    ctx.lineWidth = isMarker ? brushSize * 5 : isBrush ? brushSize * 2.5 : brushSize;
+  }
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+}
+
+function startDraw(e) {
+  e.preventDefault();
+  isDrawing = true;
+  const pos = getPos(e);
+  startX = pos.x;
+  startY = pos.y;
+
+  // Always take snapshot for undo & shape preview
+  snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+  if (['pen','brush','marker','eraser'].includes(currentTool)) {
+    applyCtxStyle();
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
+    // Draw a dot on click
+    ctx.arc(pos.x, pos.y, ctx.lineWidth / 2, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
+  }
+}
+
+function draw(e) {
+  if (!isDrawing) return;
+  e.preventDefault();
+  const pos = getPos(e);
+
+  if (['pen','brush','marker','eraser'].includes(currentTool)) {
+    applyCtxStyle();
+    ctx.lineTo(pos.x, pos.y);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
+  } else {
+    // Shape tools: restore snapshot then redraw shape preview
+    ctx.putImageData(snapshot, 0, 0);
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = brushOpacity;
+    ctx.strokeStyle = currentColor;
+    ctx.fillStyle = currentColor;
+    ctx.lineWidth = brushSize;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.beginPath();
+
+    if (currentTool === 'line') {
+      ctx.moveTo(startX, startY);
+      ctx.lineTo(pos.x, pos.y);
+      ctx.stroke();
+    } else if (currentTool === 'rect') {
+      ctx.strokeRect(startX, startY, pos.x - startX, pos.y - startY);
+    } else if (currentTool === 'circle') {
+      const rx = Math.abs(pos.x - startX) / 2;
+      const ry = Math.abs(pos.y - startY) / 2;
+      const cx = startX + (pos.x > startX ? rx : -rx);
+      const cy = startY + (pos.y > startY ? ry : -ry);
+      ctx.ellipse(cx, cy, rx, ry, 0, 0, Math.PI * 2);
+      ctx.stroke();
+    } else if (currentTool === 'arrow') {
+      drawArrow(startX, startY, pos.x, pos.y);
+    }
+  }
+}
+
+function endDraw(e) {
+  if (!isDrawing) return;
+  isDrawing = false;
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.globalAlpha = 1;
+  ctx.beginPath(); // reset path
+  // Save to history
+  const state = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  sketchHistory.push(state);
+  if (sketchHistory.length > 40) sketchHistory.shift();
+  // Persist sketch to localStorage (debounced)
+  saveSketch();
+}
+
+function drawArrow(x1, y1, x2, y2) {
+  const angle = Math.atan2(y2 - y1, x2 - x1);
+  const headLen = Math.max(15, brushSize * 4);
+  ctx.moveTo(x1, y1);
+  ctx.lineTo(x2, y2);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(x2, y2);
+  ctx.lineTo(x2 - headLen * Math.cos(angle - 0.45), y2 - headLen * Math.sin(angle - 0.45));
+  ctx.moveTo(x2, y2);
+  ctx.lineTo(x2 - headLen * Math.cos(angle + 0.45), y2 - headLen * Math.sin(angle + 0.45));
+  ctx.stroke();
+}
+
+function setTool(t) {
+  currentTool = t;
+  document.querySelectorAll('.tool-btn[data-tool]').forEach(b => b.classList.toggle('active', b.dataset.tool === t));
+  canvas.style.cursor = t === 'eraser' ? 'cell' : 'crosshair';
+}
+
+function setColor(el) {
+  currentColor = el.dataset.color;
+  document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+  el.classList.add('active');
+  if (currentTool === 'eraser') setTool('pen');
+}
+
+function clearCanvas() {
+  if (!confirm('Clear the entire sketch? This cannot be undone.')) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  sketchHistory = [];
+  snapshot = null;
+  clearSketchStorage();
+  flashSaved();
+}
+
+function undoSketch() {
+  if (sketchHistory.length === 0) return;
+  sketchHistory.pop();
+  if (sketchHistory.length === 0) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  } else {
+    ctx.putImageData(sketchHistory[sketchHistory.length - 1], 0, 0);
+  }
+  saveSketch();
+}
+
+// ═══════════════════════════════════════════════════════
+//  IDEATION BOARD
+// ═══════════════════════════════════════════════════════
+let dragTarget = null, dragOffX = 0, dragOffY = 0;
+
+function addSticky(bg, color) {
+  const board = document.getElementById('idea-board');
+  const id = 'sticky-' + (++stickyCount);
+  const x = 60 + Math.random() * 600;
+  const y = 60 + Math.random() * 500;
+  const div = document.createElement('div');
+  div.className = 'sticky-note';
+  div.id = id;
+  div.style.cssText = `background:${bg};color:${color};left:${x}px;top:${y}px;`;
+  div.innerHTML = `
+    <button class="note-delete" onclick="deleteStickyById('${id}')" title="Delete">✕</button>
+    <div class="sticky-note-content" contenteditable="true" data-placeholder="Type here…">Click to edit…</div>
+  `;
+  div.addEventListener('mousedown', onStickyMouseDown);
+  // Auto-save on content edit
+  div.querySelector('.sticky-note-content').addEventListener('input', () => saveBoard());
+  board.appendChild(div);
+  div.querySelector('.sticky-note-content').focus();
+  saveBoard();
+}
+
+function deleteStickyById(id) {
+  const el = document.getElementById(id);
+  if (el) el.remove();
+  saveBoard();
+}
+
+function onStickyMouseDown(e) {
+  if (e.target.classList.contains('sticky-note-content') || e.target.classList.contains('note-delete')) return;
+  dragTarget = e.currentTarget;
+  const rect = dragTarget.getBoundingClientRect();
+  dragOffX = e.clientX - rect.left;
+  dragOffY = e.clientY - rect.top;
+  dragTarget.classList.add('dragging');
+  dragTarget.style.zIndex = ++stickyCount + 100;
+  document.addEventListener('mousemove', onStickyMouseMove);
+  document.addEventListener('mouseup', onStickyMouseUp);
+}
+
+function onStickyMouseMove(e) {
+  if (!dragTarget) return;
+  const board = document.getElementById('idea-board').getBoundingClientRect();
+  const panel = document.getElementById('idea-panel');
+  dragTarget.style.left = (e.clientX - board.left - dragOffX + panel.scrollLeft) + 'px';
+  dragTarget.style.top = (e.clientY - board.top - dragOffY + panel.scrollTop) + 'px';
+}
+
+function onStickyMouseUp() {
+  if (dragTarget) dragTarget.classList.remove('dragging');
+  dragTarget = null;
+  document.removeEventListener('mousemove', onStickyMouseMove);
+  document.removeEventListener('mouseup', onStickyMouseUp);
+  saveBoard(); // persist new position
+}
+
+function clearBoard() {
+  if (confirm('Clear all sticky notes? This cannot be undone.')) {
+    document.getElementById('idea-board').innerHTML = '';
+    clearBoardStorage();
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+//  EXPORT
+// ═══════════════════════════════════════════════════════
+function openExport() { document.getElementById('export-modal').style.display = 'flex'; }
+function closeExport() { document.getElementById('export-modal').style.display = 'none'; }
+function closeExportOnBackdrop(e) { if (e.target === document.getElementById('export-modal')) closeExport(); }
+
+function getActiveTitle() {
+  if (currentTab === 'notes') return document.getElementById('note-title').value || 'note';
+  if (currentTab === 'sketch') return 'sketch';
+  return 'ideation-board';
+}
+
+function getPlainText() {
+  const title = document.getElementById('note-title').value;
+  const editor = document.getElementById('note-editor');
+  return (title ? title + '\n' + '='.repeat(title.length) + '\n\n' : '') + (editor.innerText || '');
+}
+
+function exportTxt() {
+  let text;
+  if (currentTab === 'notes') {
+    text = getPlainText();
+  } else if (currentTab === 'idea') {
+    const stickies = document.querySelectorAll('.sticky-note-content');
+    text = 'Ideation Board\n==============\n\n' + [...stickies].map((s,i) => `${i+1}. ${s.innerText}`).join('\n');
+  } else {
+    alert('Switch to Notes or Ideation tab to export text.'); return;
+  }
+  download(new Blob([text], {type:'text/plain'}), getActiveTitle()+'.txt');
+  closeExport();
+}
+
+function exportMD() {
+  let md;
+  if (currentTab === 'notes') {
+    const title = document.getElementById('note-title').value;
+    const editor = document.getElementById('note-editor');
+    md = (title ? '# ' + title + '\n\n' : '') + editor.innerText;
+  } else {
+    const stickies = document.querySelectorAll('.sticky-note-content');
+    md = '# Ideation Board\n\n' + [...stickies].map((s,i) => `- ${s.innerText}`).join('\n');
+  }
+  download(new Blob([md], {type:'text/markdown'}), getActiveTitle()+'.md');
+  closeExport();
+}
+
+function exportWord() {
+  let html;
+  if (currentTab === 'notes') {
+    const title = document.getElementById('note-title').value;
+    const content = document.getElementById('note-editor').innerHTML;
+    html = `<html><body><h1>${title}</h1>${content}</body></html>`;
+  } else {
+    html = '<html><body><h1>Ideation Board</h1>';
+    document.querySelectorAll('.sticky-note').forEach(s => {
+      const text = s.querySelector('.sticky-note-content').innerText;
+      html += `<p>${text}</p>`;
+    });
+    html += '</body></html>';
+  }
+  download(new Blob(['\ufeff'+html], {type:'application/msword'}), getActiveTitle()+'.doc');
+  closeExport();
+}
+
+function exportPDF() {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ orientation:'p', unit:'pt', format:'a4' });
+  if (currentTab === 'sketch') {
+    const imgData = canvas.toDataURL('image/png');
+    doc.addImage(imgData, 'PNG', 30, 30, 535, 380);
+    doc.save(getActiveTitle()+'.pdf');
+  } else if (currentTab === 'notes') {
+    const title = document.getElementById('note-title').value || 'Note';
+    const text = document.getElementById('note-editor').innerText;
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(18);
+    doc.text(title, 40, 50);
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(11);
+    const lines = doc.splitTextToSize(text, 515);
+    doc.text(lines, 40, 80);
+    doc.save(title+'.pdf');
+  } else {
+    const doc2 = new jsPDF({ orientation:'l', unit:'pt', format:'a4' });
+    doc2.setFont('helvetica','bold');
+    doc2.setFontSize(16);
+    doc2.text('Ideation Board', 30, 40);
+    doc2.setFont('helvetica','normal');
+    doc2.setFontSize(10);
+    let y = 70;
+    document.querySelectorAll('.sticky-note-content').forEach((s, i) => {
+      const txt = doc2.splitTextToSize(`${i+1}. ${s.innerText}`, 760);
+      doc2.text(txt, 30, y);
+      y += txt.length * 14 + 8;
+      if (y > 540) { doc2.addPage(); y = 40; }
+    });
+    doc2.save('ideation-board.pdf');
+  }
+  closeExport();
+}
+
+function canvasExport(type) {
+  if (currentTab === 'sketch') {
+    download(canvas.toDataURL('image/'+type, 0.95), 'sketch.'+type);
+  } else if (currentTab === 'notes') {
+    // render note to offscreen canvas
+    const offCanvas = document.createElement('canvas');
+    offCanvas.width = 900; offCanvas.height = 1200;
+    const octx = offCanvas.getContext('2d');
+    octx.fillStyle = '#f7f4ee';
+    octx.fillRect(0,0,900,1200);
+    octx.fillStyle = '#0d0d0d';
+    octx.font = 'bold 32px serif';
+    octx.fillText(document.getElementById('note-title').value || 'Note', 48, 70);
+    octx.font = '18px serif';
+    const lines = document.getElementById('note-editor').innerText.split('\n');
+    let y = 120;
+    lines.forEach(l => {
+      const wraps = wrapText(octx, l, 804, 18);
+      wraps.forEach(wl => { octx.fillText(wl, 48, y); y += 28; });
+    });
+    download(offCanvas.toDataURL('image/'+type, 0.95), 'note.'+type);
+  } else {
+    alert('Switch to Sketch tab for best image export.');
+    return;
+  }
+  closeExport();
+}
+
+function wrapText(ctx, text, maxWidth, size) {
+  const words = text.split(' ');
+  const lines = [];
+  let line = '';
+  for (let w of words) {
+    const test = line + (line ? ' ' : '') + w;
+    if (ctx.measureText(test).width > maxWidth && line) { lines.push(line); line = w; }
+    else line = test;
+  }
+  if (line) lines.push(line);
+  return lines.length ? lines : [''];
+}
+
+function exportPNG() { canvasExport('png'); }
+function exportJPG() { canvasExport('jpeg'); }
+
+function download(blob, filename) {
+  const url = URL.createObjectURL(blob instanceof Blob ? blob : new Blob([blob]));
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ═══════════════════════════════════════════════════════
+//  STATUS
+// ═══════════════════════════════════════════════════════
+function updateWordCount() {
+  const text = document.getElementById('note-editor').innerText.trim();
+  const words = text ? text.split(/\s+/).length : 0;
+  document.getElementById('status-words').textContent = words + ' words';
+}
+
+function updateStatus() {
+  document.getElementById('status-items').textContent = notes.length + ' notes';
+}
+
+// ═══════════════════════════════════════════════════════
+//  PERSISTENT STORAGE — Notes + Sketch + Ideation Board
+// ═══════════════════════════════════════════════════════
+
+const STORE = {
+  NOTES:   'wb_notes',
+  SKETCH:  'wb_sketch',
+  BOARD:   'wb_board',
+  META:    'wb_meta'
+};
+
+// ── NOTES ──────────────────────────────────────────────
+function saveNotes() {
+  try {
+    localStorage.setItem(STORE.NOTES, JSON.stringify(notes));
+  } catch(e) { showSaveError('Notes too large for storage'); }
+}
+
+function loadNotes() {
+  try {
+    const raw = localStorage.getItem(STORE.NOTES);
+    if (raw) notes = JSON.parse(raw);
+  } catch(e) { notes = []; }
+}
+
+// ── SKETCH ─────────────────────────────────────────────
+let sketchSaveTimer = null;
+
+function saveSketch() {
+  // Debounce — don't save on every mousemove stroke, wait 800ms after last stroke
+  clearTimeout(sketchSaveTimer);
+  sketchSaveTimer = setTimeout(() => {
+    try {
+      if (canvas.width === 0 || canvas.height === 0) return;
+      const dataURL = canvas.toDataURL('image/png');
+      localStorage.setItem(STORE.SKETCH, dataURL);
+      flashSaved();
+    } catch(e) {
+      // Canvas too large — try JPEG at lower quality
+      try {
+        const dataURL = canvas.toDataURL('image/jpeg', 0.6);
+        localStorage.setItem(STORE.SKETCH, dataURL);
+        flashSaved();
+      } catch(e2) { showSaveError('Sketch too large to auto-save'); }
+    }
+  }, 800);
+}
+
+function loadSketch() {
+  try {
+    const dataURL = localStorage.getItem(STORE.SKETCH);
+    if (!dataURL) return;
+    const img = new Image();
+    img.onload = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      // Seed history with loaded state
+      sketchHistory = [ctx.getImageData(0, 0, canvas.width, canvas.height)];
+    };
+    img.src = dataURL;
+  } catch(e) {}
+}
+
+function clearSketchStorage() {
+  localStorage.removeItem(STORE.SKETCH);
+}
+
+// ── IDEATION BOARD ─────────────────────────────────────
+function saveBoard() {
+  try {
+    const stickies = [];
+    document.querySelectorAll('.sticky-note').forEach(el => {
+      stickies.push({
+        id:      el.id,
+        bg:      el.style.background,
+        color:   el.style.color,
+        left:    el.style.left,
+        top:     el.style.top,
+        zIndex:  el.style.zIndex || '100',
+        content: el.querySelector('.sticky-note-content').innerHTML
+      });
+    });
+    localStorage.setItem(STORE.BOARD, JSON.stringify(stickies));
+  } catch(e) {}
+}
+
+function loadBoard() {
+  try {
+    const raw = localStorage.getItem(STORE.BOARD);
+    if (!raw) return;
+    const stickies = JSON.parse(raw);
+    stickies.forEach(s => restoreSticky(s));
+  } catch(e) {}
+}
+
+function restoreSticky(s) {
+  const board = document.getElementById('idea-board');
+  const div = document.createElement('div');
+  div.className = 'sticky-note';
+  div.id = s.id;
+  div.style.cssText = `background:${s.bg};color:${s.color};left:${s.left};top:${s.top};z-index:${s.zIndex};`;
+  div.innerHTML = `
+    <button class="note-delete" onclick="deleteStickyById('${s.id}')" title="Delete">✕</button>
+    <div class="sticky-note-content" contenteditable="true">${s.content}</div>
+  `;
+  div.addEventListener('mousedown', onStickyMouseDown);
+  // Save board when sticky content is edited
+  div.querySelector('.sticky-note-content').addEventListener('input', () => saveBoard());
+  board.appendChild(div);
+  // Track highest stickyCount id
+  const num = parseInt(s.id.replace('sticky-','')) || 0;
+  if (num >= stickyCount) stickyCount = num + 1;
+}
+
+function clearBoardStorage() {
+  localStorage.removeItem(STORE.BOARD);
+}
+
+// ── MASTER SAVE ────────────────────────────────────────
+function saveAll() {
+  updateCurrentNote();
+  saveNotes();
+  // Sketch is saved on stroke via saveSketch()
+  // Board is saved on edit via saveBoard()
+  flashSaved();
+}
+
+// ── FULL LOAD ──────────────────────────────────────────
+function loadFromStorage() {
+  loadNotes();
+  loadBoard();
+  // Sketch is loaded after canvas is sized (called from switchTab → resizeCanvas)
+}
+
+// ── VISUAL FEEDBACK ────────────────────────────────────
+let flashTimer = null;
+function flashSaved() {
+  const sb = document.getElementById('statusbar');
+  const indicator = document.getElementById('save-indicator');
+  if (indicator) { indicator.style.opacity = '1'; clearTimeout(flashTimer); flashTimer = setTimeout(() => indicator.style.opacity = '0', 1800); }
+  sb.style.background = '#2d6a4f';
+  clearTimeout(flashTimer);
+  flashTimer = setTimeout(() => sb.style.background = 'var(--ink)', 1200);
+}
+
+function showSaveError(msg) {
+  const sb = document.getElementById('statusbar');
+  sb.style.background = '#c9184a';
+  setTimeout(() => sb.style.background = 'var(--ink)', 2000);
+  console.warn('Wimbyblaise save error:', msg);
+}
+
+// Autosave every 20s
+setInterval(saveAll, 20000);
+
+// Sidebar toggle for mobile
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('mobile-open');
+}
+
+// ═══════════════════════════════════════════════════════
+//  KEYBOARD SHORTCUTS
+// ═══════════════════════════════════════════════════════
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); saveAll(); }
+  if ((e.ctrlKey || e.metaKey) && e.key === 'n' && currentTab === 'notes') { e.preventDefault(); newNote(); }
+  if ((e.ctrlKey || e.metaKey) && e.key === 'e') { e.preventDefault(); openExport(); }
+  if ((e.ctrlKey || e.metaKey) && e.key === 'f') { e.preventDefault(); toggleSearch(); }
+  if ((e.ctrlKey || e.metaKey) && e.key === 'd') { e.preventDefault(); toggleDark(); }
+  if ((e.ctrlKey || e.metaKey) && e.key === 'z' && currentTab === 'sketch') { e.preventDefault(); undoSketch(); }
+  if (e.key === 'Escape') {
+    if (searchVisible) toggleSearch();
+    ['focus-modal','wa-modal','export-modal','support-modal'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.style.display !== 'none') el.style.display = 'none';
+    });
+    if (focusRunning) { /* keep timer if running */ }
+  }
+  if (e.key === '1' && e.altKey) switchTab('notes');
+  if (e.key === '2' && e.altKey) switchTab('sketch');
+  if (e.key === '3' && e.altKey) switchTab('idea');
+});
+
+// ═══════════════════════════════════════════════════════
+//  FEATURE 1 — DARK MODE
+// ═══════════════════════════════════════════════════════
+function toggleDark() {
+  document.body.classList.toggle('dark');
+  const isDark = document.body.classList.contains('dark');
+  localStorage.setItem('wb_dark', isDark ? '1' : '0');
+  const btn = document.getElementById('btn-dark');
+  btn.innerHTML = isDark ? '<i class="bi bi-sun-fill"></i>' : '<i class="bi bi-moon-fill"></i>';
+}
+
+function loadDarkMode() {
+  if (localStorage.getItem('wb_dark') === '1') {
+    document.body.classList.add('dark');
+    document.getElementById('btn-dark').innerHTML = '<i class="bi bi-sun-fill"></i>';
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+//  FEATURE 2 — NOTE SEARCH
+// ═══════════════════════════════════════════════════════
+let searchVisible = false;
+
+function toggleSearch() {
+  searchVisible = !searchVisible;
+  const bar = document.getElementById('search-bar');
+  bar.style.display = searchVisible ? 'flex' : 'none';
+  if (searchVisible) {
+    document.getElementById('search-input').focus();
+    if (currentTab !== 'notes') switchTab('notes');
+  } else {
+    clearSearchHighlights();
+    document.getElementById('search-count').textContent = '';
+    document.getElementById('search-input').value = '';
+    renderNoteList(); // restore full list
+  }
+}
+
+function searchNotes() {
+  const q = document.getElementById('search-input').value.trim().toLowerCase();
+  clearSearchHighlights();
+  if (!q) {
+    renderNoteList();
+    document.getElementById('search-count').textContent = '';
+    return;
+  }
+
+  // Filter sidebar list
+  const list = document.getElementById('note-list');
+  list.innerHTML = '';
+  const matches = notes.filter(n =>
+    n.title.toLowerCase().includes(q) || n.content.toLowerCase().includes(q)
+  );
+  document.getElementById('search-count').textContent = matches.length + ' found';
+
+  matches.forEach(note => {
+    const div = document.createElement('div');
+    div.className = 'note-item' + (note.id === currentNoteId ? ' active' : '');
+    const snippet = note.content.replace(/<[^>]+>/g,'').substring(0,60);
+    div.innerHTML = `<div class="note-item-title">${highlightText(note.title || 'Untitled', q)}</div>
+      <div class="note-item-meta">${highlightText(snippet, q)}…</div>`;
+    div.onclick = () => { setActiveNote(note.id); highlightInEditor(q); };
+    list.appendChild(div);
+  });
+
+  // Highlight in current editor
+  highlightInEditor(q);
+}
+
+function highlightText(text, q) {
+  const re = new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+  return text.replace(re, '<mark class="wb-highlight">$1</mark>');
+}
+
+function highlightInEditor(q) {
+  const editor = document.getElementById('note-editor');
+  clearSearchHighlights();
+  if (!q) return;
+  const re = new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+  editor.innerHTML = editor.innerHTML.replace(re, '<mark class="wb-highlight">$1</mark>');
+}
+
+function clearSearchHighlights() {
+  const editor = document.getElementById('note-editor');
+  editor.querySelectorAll('mark.wb-highlight').forEach(m => {
+    m.replaceWith(m.textContent);
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+//  FEATURE 3 — READING STATS
+// ═══════════════════════════════════════════════════════
+function updateWordCount() {
+  const text = document.getElementById('note-editor').innerText.trim();
+  const words = text ? text.split(/\s+/).filter(Boolean).length : 0;
+  const chars = text.length;
+  const lines = text ? text.split('\n').length : 0;
+  const readMin = Math.max(1, Math.ceil(words / 200));
+
+  document.getElementById('status-words').textContent = words + ' words';
+  document.getElementById('stat-words').textContent = words + ' words';
+  document.getElementById('stat-chars').textContent = chars + ' chars';
+  document.getElementById('stat-read').textContent = '~' + readMin + ' min read';
+  document.getElementById('stat-lines').textContent = lines + ' lines';
+  document.getElementById('stat-time').textContent = 'Last edit: ' + new Date().toLocaleTimeString();
+}
+
+// ═══════════════════════════════════════════════════════
+//  FEATURE 4 — FOCUS / POMODORO TIMER
+// ═══════════════════════════════════════════════════════
+let focusInterval = null;
+let focusSeconds = 25 * 60;
+let focusTotalSeconds = 25 * 60;
+let focusRunning = false;
+let focusMode = 'work';
+let sessionCount = parseInt(localStorage.getItem('wb_sessions') || '0');
+let sessionDate = localStorage.getItem('wb_session_date') || '';
+
+function openFocus() {
+  // Reset session count if new day
+  const today = new Date().toDateString();
+  if (sessionDate !== today) { sessionCount = 0; sessionDate = today; localStorage.setItem('wb_session_date', today); }
+  document.getElementById('session-count').textContent = sessionCount;
+  updateFocusDisplay();
+  document.getElementById('focus-modal').style.display = 'flex';
+}
+
+function closeFocusOnBackdrop(e) { if (e.target === document.getElementById('focus-modal')) closeModal('focus-modal'); }
+
+function setFocusMode(mode, minutes) {
+  if (focusRunning) return;
+  focusMode = mode;
+  focusSeconds = minutes * 60;
+  focusTotalSeconds = focusSeconds;
+  document.querySelectorAll('.focus-mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('fmode-' + mode).classList.add('active');
+  document.getElementById('focus-label').textContent = mode === 'work' ? 'Work Session' : mode === 'short' ? 'Short Break' : 'Long Break';
+  updateFocusDisplay();
+  document.getElementById('focus-progress').style.width = '0%';
+}
+
+function startFocus() {
+  if (focusRunning) return;
+  focusRunning = true;
+  document.getElementById('focus-start-btn').style.display = 'none';
+  document.getElementById('focus-pause-btn').style.display = 'inline-flex';
+  document.body.classList.add('focus-active');
+
+  focusInterval = setInterval(() => {
+    focusSeconds--;
+    updateFocusDisplay();
+    const pct = ((focusTotalSeconds - focusSeconds) / focusTotalSeconds) * 100;
+    document.getElementById('focus-progress').style.width = pct + '%';
+
+    if (focusSeconds <= 0) {
+      clearInterval(focusInterval);
+      focusRunning = false;
+      document.body.classList.remove('focus-active');
+      document.getElementById('focus-start-btn').style.display = 'inline-flex';
+      document.getElementById('focus-pause-btn').style.display = 'none';
+      if (focusMode === 'work') {
+        sessionCount++;
+        localStorage.setItem('wb_sessions', sessionCount);
+        localStorage.setItem('wb_session_date', new Date().toDateString());
+        document.getElementById('session-count').textContent = sessionCount;
+      }
+      // Play a beep
+      playBeep();
+      document.getElementById('focus-label').textContent = focusMode === 'work' ? '🎉 Session Done!' : '☕ Break Done!';
+    }
+  }, 1000);
+}
+
+function pauseFocus() {
+  clearInterval(focusInterval);
+  focusRunning = false;
+  document.body.classList.remove('focus-active');
+  document.getElementById('focus-start-btn').style.display = 'inline-flex';
+  document.getElementById('focus-start-btn').innerHTML = '<i class="bi bi-play-fill"></i> Resume';
+  document.getElementById('focus-pause-btn').style.display = 'none';
+}
+
+function resetFocus() {
+  clearInterval(focusInterval);
+  focusRunning = false;
+  document.body.classList.remove('focus-active');
+  const minsMap = { work: 25, short: 5, long: 15 };
+  focusSeconds = (minsMap[focusMode] || 25) * 60;
+  focusTotalSeconds = focusSeconds;
+  updateFocusDisplay();
+  document.getElementById('focus-progress').style.width = '0%';
+  document.getElementById('focus-start-btn').style.display = 'inline-flex';
+  document.getElementById('focus-start-btn').innerHTML = '<i class="bi bi-play-fill"></i> Start';
+  document.getElementById('focus-pause-btn').style.display = 'none';
+  document.getElementById('focus-label').textContent = focusMode === 'work' ? 'Work Session' : focusMode === 'short' ? 'Short Break' : 'Long Break';
+}
+
+function updateFocusDisplay() {
+  const m = String(Math.floor(focusSeconds / 60)).padStart(2,'0');
+  const s = String(focusSeconds % 60).padStart(2,'0');
+  const txt = m + ':' + s;
+  document.getElementById('focus-display').textContent = txt;
+  document.getElementById('focus-badge-time').textContent = txt;
+}
+
+function playBeep() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [0, 200, 400].forEach(delay => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.frequency.value = 880;
+      osc.type = 'sine';
+      gain.gain.setValueAtTime(0.3, ctx.currentTime + delay/1000);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + delay/1000 + 0.4);
+      osc.start(ctx.currentTime + delay/1000);
+      osc.stop(ctx.currentTime + delay/1000 + 0.5);
+    });
+  } catch(e) {}
+}
+
+// ── GENERIC MODAL CLOSE ───────────────────────────────
+function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+function openWA() { document.getElementById('wa-modal').style.display = 'flex'; }
+
+// ═══════════════════════════════════════════════════════
+//  SUPPORT MODAL
+// ═══════════════════════════════════════════════════════
+function openSupport() { document.getElementById('support-modal').style.display = 'flex'; }
+function closeSupport() { document.getElementById('support-modal').style.display = 'none'; }
+function closeSupportOnBackdrop(e) { if (e.target === document.getElementById('support-modal')) closeSupport(); }
+
+function copyAcct() {
+  navigator.clipboard.writeText('7066459689').then(() => {
+    const el = document.getElementById('copy-confirm');
+    el.style.display = 'block';
+    setTimeout(() => el.style.display = 'none', 2500);
+  }).catch(() => {
+    // fallback
+    const ta = document.createElement('textarea');
+    ta.value = '7066459689';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    const el = document.getElementById('copy-confirm');
+    el.style.display = 'block';
+    setTimeout(() => el.style.display = 'none', 2500);
+  });
+}
+
+init();
+</script>
+</body>
+</html>
