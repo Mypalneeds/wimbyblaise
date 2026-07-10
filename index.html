@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="Vg-rb1FG8ekCQvnC-NTKjHmiAcc7MEBDApgzGkpMmhs" />
 
 <!-- ══ PRIMARY SEO ══════════════════════════════════════ -->
 <title>Wimbyblaise | Free Online Note Taker, Sketch Board & Ideation Tool — whatimeant</title>
-<meta name="description" content="Wimbyblaise is a free online note-taking app, sketch board, ideation tool, and bulk image converter. Write rich notes, draw sketches, brainstorm with sticky notes, convert images to WebP or AVIF, and export to PDF, Word, PNG, JPG, TXT or Markdown — all in your browser, no sign-up needed.">
-<meta name="keywords" content="free note taker, online note taking app, free notepad online, best free notes app, note taking tool, free writing tool, sketch board online, free sketchpad, drawing tool online, ideation board, brainstorm tool, sticky notes online, mind mapping tool, free productivity app, notes without login, browser note taking, free notepad app, digital notebook free, online whiteboard free, free drawing app, canvas sketch tool, export notes to PDF, export notes to Word, export sketch to PNG, free note organizer, note taking for students, note taking for work, free creative writing tool, free brainstorming app, online collaboration board, BERT optimized note app, no account required, free web app, open source note taker, free offline notes, export to markdown, rich text editor free, free text editor online, best free notepad, quick notes online, free ideas board, thought organizer, free planner app, note manager free, write notes online, free document creator, sketch to PDF, ideation tool free, free creative board, sticky notes board, note export tool, idea capture tool, free web notepad, online sketchbook free, digital whiteboard, brainstorming sticky notes, free student notes app, project notes tool, task notes free, free mind board, free image converter, webp converter online, avif converter online, bulk image converter, convert jpg to webp, convert png to webp, no upload image converter, client side image converter">
+<meta name="description" content="Wimbyblaise is a free online note-taking app, sketch board, ideation tool, bulk image converter, and QR code generator. Write rich notes, draw sketches, brainstorm with sticky notes, convert images to WebP or AVIF, generate QR codes for links and WiFi, and export to PDF, Word, PNG, JPG, TXT or Markdown — all in your browser, no sign-up needed.">
+<meta name="keywords" content="free note taker, online note taking app, free notepad online, best free notes app, note taking tool, free writing tool, sketch board online, free sketchpad, drawing tool online, ideation board, brainstorm tool, sticky notes online, mind mapping tool, free productivity app, notes without login, browser note taking, free notepad app, digital notebook free, online whiteboard free, free drawing app, canvas sketch tool, export notes to PDF, export notes to Word, export sketch to PNG, free note organizer, note taking for students, note taking for work, free creative writing tool, free brainstorming app, online collaboration board, BERT optimized note app, no account required, free web app, open source note taker, free offline notes, export to markdown, rich text editor free, free text editor online, best free notepad, quick notes online, free ideas board, thought organizer, free planner app, note manager free, write notes online, free document creator, sketch to PDF, ideation tool free, free creative board, sticky notes board, note export tool, idea capture tool, free web notepad, online sketchbook free, digital whiteboard, brainstorming sticky notes, free student notes app, project notes tool, task notes free, free mind board, free image converter, webp converter online, avif converter online, bulk image converter, convert jpg to webp, convert png to webp, no upload image converter, client side image converter, free qr code generator, qr code generator online, wifi qr code generator, whatsapp qr code, vcard qr code generator, qr code maker free">
 <meta name="author" content="Mmadubuko Micheal — Wimbyblaise">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
@@ -59,6 +60,7 @@
     "Freehand sketch board",
     "Ideation and brainstorming sticky board",
     "Qeconvert: bulk image to WebP or AVIF converter",
+    "Qecode: QR code generator for links, WiFi, WhatsApp and contact cards",
     "Export to PDF",
     "Export to Word document",
     "Export to PNG image",
@@ -70,13 +72,22 @@
     "Keyboard shortcuts",
     "Multiple notes management"
   ],
-  "hasPart": {
-    "@type": "SoftwareApplication",
-    "name": "Qeconvert",
-    "applicationCategory": "UtilitiesApplication",
-    "description": "A free, client-side bulk image converter built into Wimbyblaise. Converts JPG, PNG, BMP, GIF, TIFF and WebP images to WebP or AVIF entirely in the browser — no uploads.",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-  },
+  "hasPart": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Qeconvert",
+      "applicationCategory": "UtilitiesApplication",
+      "description": "A free, client-side bulk image converter built into Wimbyblaise. Converts JPG, PNG, BMP, GIF, TIFF and WebP images to WebP or AVIF entirely in the browser — no uploads.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Qecode",
+      "applicationCategory": "UtilitiesApplication",
+      "description": "A free, client-side QR code generator built into Wimbyblaise. Creates QR codes for links, plain text, WiFi logins, WhatsApp chats, and vCard contact cards — no server round-trip.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+  ],
   "author": {
     "@type": "Person",
     "name": "Mmadubuko Micheal",
@@ -127,6 +138,16 @@
       "@type": "Question",
       "name": "Does Qeconvert upload my images to a server?",
       "acceptedAnswer": { "@type": "Answer", "text": "No. Qeconvert converts every image locally using the Canvas API. Your files never leave your device." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Wimbyblaise generate QR codes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Qecode tab generates QR codes for links, plain text, WiFi networks, WhatsApp chats, and contact cards (vCard), then lets you download the result as a PNG." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Qecode QR generator free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, Qecode is free with no sign-up, and every QR code is generated locally in your browser." }
     }
   ]
 }
@@ -147,6 +168,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
   :root {
     --ink: #0d0d0d;
@@ -565,7 +587,14 @@
   .qc-dropzone:hover, .qc-dropzone.drag { border-color: var(--accent); background: #fff6ee; }
   .qc-dz-icon { font-size: 22px; color: var(--accent); margin-bottom: 8px; }
   .qc-dz-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--ink); margin: 0 0 4px; }
-  .qc-dz-sub { font-size: 0.68rem; color: var(--muted); margin: 0; }
+  .qc-dz-sub { font-size: 0.68rem; color: var(--muted); margin: 0 0 12px; }
+  .qc-dz-buttons { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .qc-dz-btn {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; font-weight: 600;
+    padding: 8px 14px; border-radius: 7px; border: 1.5px solid var(--border); background: #fff;
+    color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: .15s;
+  }
+  .qc-dz-btn:hover { border-color: var(--accent); color: var(--accent); background: #fff6ee; }
   #qc-folderInput, #qc-fileInput { display: none; }
 
   .qc-controls { margin-top: 1.4rem; display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: flex-end; justify-content: space-between; }
@@ -626,6 +655,44 @@
   .qc-summary b { color: var(--ink); }
   .qc-privacy-line { margin-top: 1.2rem; font-size: 0.62rem; color: var(--muted); text-align: center; }
   .qc-privacy-line i { color: var(--accent2); margin-right: 4px; }
+
+  /* ── QECODE PANEL ─────────────────────────── */
+  #qecode-panel {
+    flex: 1;
+    display: none;
+    overflow-y: auto;
+    background: var(--canvas-bg);
+  }
+  #qr-scroll { max-width: 620px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+
+  .qr-fieldset { margin-top: 14px; }
+  .qr-label {
+    display: block; font-size: 0.6rem; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; margin-bottom: 6px;
+  }
+  .qr-input {
+    width: 100%; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--ink);
+    border: 1.5px solid var(--border); border-radius: 8px; padding: 9px 12px; background: #fff;
+    outline: none; transition: border-color .15s;
+  }
+  .qr-input:focus { border-color: var(--accent); }
+  textarea.qr-input { resize: vertical; font-family: 'Lora', serif; }
+
+  .qr-swatches { display: flex; gap: 8px; }
+  .qr-swatch {
+    width: 26px; height: 26px; border-radius: 50%; cursor: pointer;
+    border: 2px solid transparent; display: inline-block; transition: transform .12s;
+  }
+  .qr-swatch:hover { transform: scale(1.15); }
+  .qr-swatch.active { border-color: var(--border); box-shadow: 0 0 0 2px var(--ink); }
+
+  #qr-preview-wrap {
+    margin-top: 1.6rem; display: flex; justify-content: center; align-items: center;
+    min-height: 120px;
+  }
+  #qr-preview { background: #fff; padding: 16px; border-radius: 10px; border: 1.5px solid var(--border); display: inline-block; }
+  #qr-preview img, #qr-preview canvas { display: block; border-radius: 4px; }
+  #qr-preview:empty { display: none; }
 
   /* ── STATUS BAR ───────────────────────────── */
   #statusbar {
@@ -805,6 +872,9 @@
     <button class="tab-pill" id="tab-qeconvert" onclick="switchTab('qeconvert')">
       <i class="bi bi-images"></i> Qeconvert
     </button>
+    <button class="tab-pill" id="tab-qecode" onclick="switchTab('qecode')">
+      <i class="bi bi-qr-code"></i> Qecode
+    </button>
   </div>
 
   <div class="topbar-actions">
@@ -869,6 +939,18 @@
       <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
         <strong style="color:var(--ink);">WebP</strong> — works in every modern browser.<br>
         <strong style="color:var(--ink);">AVIF</strong> — smaller files, needs Chrome 124+.
+      </p>
+    </div>
+
+    <!-- Qecode info (shown only on Qecode tab) -->
+    <div class="sidebar-section" id="sidebar-qecode-section" style="display:none;flex:1;overflow-y:auto;">
+      <div class="sidebar-label">About Qecode</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        Generates QR codes for links, plain text, WiFi logins, WhatsApp chats, and contact cards — no server round-trip, built right here.
+      </p>
+      <div class="sidebar-label mt-2">Tip</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        Great for business cards, flyers, storefront WiFi signs, and product packaging.
       </p>
     </div>
 
@@ -1014,8 +1096,12 @@
         <div class="qc-card">
           <div class="qc-dropzone" id="qc-dropzone">
             <div class="qc-dz-icon"><i class="bi bi-images"></i></div>
-            <p class="qc-dz-title">Click to choose an Images folder, or drag images here</p>
-            <p class="qc-dz-sub">JPG, PNG, BMP, GIF, TIFF, WebP accepted</p>
+            <p class="qc-dz-title">Drag images here</p>
+            <p class="qc-dz-sub">JPG, PNG, BMP, GIF, TIFF, WebP accepted — one image or a whole folder</p>
+            <div class="qc-dz-buttons">
+              <button type="button" class="qc-dz-btn" id="qc-pickFiles"><i class="bi bi-file-earmark-image"></i> Choose image(s)</button>
+              <button type="button" class="qc-dz-btn" id="qc-pickFolder"><i class="bi bi-folder2-open"></i> Choose folder</button>
+            </div>
             <input type="file" id="qc-folderInput" webkitdirectory directory multiple>
             <input type="file" id="qc-fileInput" multiple accept="image/*">
           </div>
@@ -1048,6 +1134,109 @@
           <div class="qc-contact-sheet" id="qc-sheet"></div>
 
           <p class="qc-privacy-line"><i class="bi bi-lock-fill"></i>Everything runs on-device. Leaving this tab discards anything not downloaded.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- QECODE PANEL -->
+    <div id="qecode-panel">
+      <div id="qr-scroll">
+        <div class="qc-header">
+          <h2>Qecode</h2>
+          <p>Generate a QR code for a link, WiFi login, WhatsApp chat, or contact card — instantly, right here.</p>
+          <div class="qc-badges">
+            <span class="qc-badge"><i class="bi bi-shield-check"></i> No uploads, ever</span>
+            <span class="qc-badge"><i class="bi bi-lightning-charge-fill"></i> Free, no sign-up</span>
+            <span class="qc-badge"><i class="bi bi-download"></i> Download as PNG</span>
+          </div>
+        </div>
+
+        <div class="qc-card">
+          <div class="qc-field" style="margin-bottom:1.2rem;">
+            <label>Type</label>
+            <div class="qc-segmented" id="qr-typeToggle" style="width:100%;flex-wrap:wrap;">
+              <button data-type="url" class="active">Link</button>
+              <button data-type="text">Text</button>
+              <button data-type="wifi">WiFi</button>
+              <button data-type="whatsapp">WhatsApp</button>
+              <button data-type="contact">Contact</button>
+            </div>
+          </div>
+
+          <!-- LINK / TEXT -->
+          <div class="qr-fieldset" id="qr-fields-url">
+            <label class="qr-label">URL</label>
+            <input class="qr-input" id="qr-url" type="text" placeholder="https://micheal.analaize.com.ng">
+          </div>
+          <div class="qr-fieldset" id="qr-fields-text" style="display:none;">
+            <label class="qr-label">Text</label>
+            <textarea class="qr-input" id="qr-text" rows="3" placeholder="Any text you want encoded…"></textarea>
+          </div>
+
+          <!-- WIFI -->
+          <div class="qr-fieldset" id="qr-fields-wifi" style="display:none;">
+            <label class="qr-label">Network name (SSID)</label>
+            <input class="qr-input" id="qr-wifi-ssid" type="text" placeholder="My WiFi Network">
+            <label class="qr-label" style="margin-top:10px;">Password</label>
+            <input class="qr-input" id="qr-wifi-pass" type="text" placeholder="password123">
+            <label class="qr-label" style="margin-top:10px;">Encryption</label>
+            <select class="qr-input" id="qr-wifi-enc">
+              <option value="WPA">WPA / WPA2</option>
+              <option value="WEP">WEP</option>
+              <option value="nopass">None (open network)</option>
+            </select>
+          </div>
+
+          <!-- WHATSAPP -->
+          <div class="qr-fieldset" id="qr-fields-whatsapp" style="display:none;">
+            <label class="qr-label">WhatsApp number (with country code)</label>
+            <input class="qr-input" id="qr-wa-number" type="text" placeholder="2347066459689">
+            <label class="qr-label" style="margin-top:10px;">Pre-filled message (optional)</label>
+            <input class="qr-input" id="qr-wa-message" type="text" placeholder="Hi! I found you via QR code">
+          </div>
+
+          <!-- CONTACT -->
+          <div class="qr-fieldset" id="qr-fields-contact" style="display:none;">
+            <label class="qr-label">Full name</label>
+            <input class="qr-input" id="qr-c-name" type="text" placeholder="Micheal Blaise">
+            <label class="qr-label" style="margin-top:10px;">Phone</label>
+            <input class="qr-input" id="qr-c-phone" type="text" placeholder="+2347066459689">
+            <label class="qr-label" style="margin-top:10px;">Email</label>
+            <input class="qr-input" id="qr-c-email" type="text" placeholder="you@example.com">
+            <label class="qr-label" style="margin-top:10px;">Company (optional)</label>
+            <input class="qr-input" id="qr-c-org" type="text" placeholder="Analaize Limited">
+          </div>
+
+          <div class="qc-controls" style="margin-top:1.4rem;">
+            <div class="qc-field">
+              <label>Color</label>
+              <div class="qr-swatches" id="qr-swatches">
+                <span class="qr-swatch active" style="background:#0d0d0d" data-color="#0d0d0d"></span>
+                <span class="qr-swatch" style="background:#e85d04" data-color="#e85d04"></span>
+                <span class="qr-swatch" style="background:#2d6a4f" data-color="#2d6a4f"></span>
+                <span class="qr-swatch" style="background:#1d3557" data-color="#1d3557"></span>
+              </div>
+            </div>
+            <div class="qc-field">
+              <label>Size</label>
+              <div class="qc-segmented" id="qr-sizeToggle">
+                <button data-size="200">Small</button>
+                <button data-size="300" class="active">Medium</button>
+                <button data-size="400">Large</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="qc-actions">
+            <button class="qc-primary" id="qr-generateBtn"><i class="bi bi-qr-code"></i> Generate QR Code</button>
+            <button class="qc-secondary" id="qr-downloadBtn" disabled><i class="bi bi-download"></i> Download PNG</button>
+          </div>
+
+          <div id="qr-preview-wrap">
+            <div id="qr-preview"></div>
+          </div>
+
+          <p class="qc-privacy-line"><i class="bi bi-lock-fill"></i>The QR code is generated entirely in your browser. Nothing is sent anywhere.</p>
         </div>
       </div>
     </div>
@@ -1321,18 +1510,21 @@ function init() {
 // ═══════════════════════════════════════════════════════
 function switchTab(tab) {
   currentTab = tab;
-  ['notes','sketch','idea','qeconvert'].forEach(t => {
+  ['notes','sketch','idea','qeconvert','qecode'].forEach(t => {
     document.getElementById('tab-'+t).classList.toggle('active', t === tab);
   });
   document.getElementById('note-panel').style.display = tab === 'notes' ? 'flex' : 'none';
   document.getElementById('sketch-panel').style.display = tab === 'sketch' ? 'flex' : 'none';
   document.getElementById('idea-panel').style.display = tab === 'idea' ? 'block' : 'none';
   document.getElementById('qeconvert-panel').style.display = tab === 'qeconvert' ? 'block' : 'none';
+  document.getElementById('qecode-panel').style.display = tab === 'qecode' ? 'block' : 'none';
   document.getElementById('sketch-tools').style.display = tab === 'sketch' ? 'block' : 'none';
   document.getElementById('idea-tools').style.display = tab === 'idea' ? 'block' : 'none';
-  document.getElementById('sidebar-new-section').style.display = tab === 'qeconvert' ? 'none' : 'block';
-  document.getElementById('sidebar-items-section').style.display = tab === 'qeconvert' ? 'none' : 'flex';
+  const utilityTab = (tab === 'qeconvert' || tab === 'qecode');
+  document.getElementById('sidebar-new-section').style.display = utilityTab ? 'none' : 'block';
+  document.getElementById('sidebar-items-section').style.display = utilityTab ? 'none' : 'flex';
   document.getElementById('sidebar-qeconvert-section').style.display = tab === 'qeconvert' ? 'block' : 'none';
+  document.getElementById('sidebar-qecode-section').style.display = tab === 'qecode' ? 'block' : 'none';
   document.getElementById('new-btn-label').textContent = tab === 'notes' ? 'New Note' : tab === 'sketch' ? 'Clear Sketch' : tab === 'idea' ? 'Add Sticky' : 'New';
   document.getElementById('status-mode').textContent = tab.charAt(0).toUpperCase() + tab.slice(1);
   if (tab === 'sketch') {
@@ -2038,6 +2230,7 @@ document.addEventListener('keydown', e => {
   if (e.key === '2' && e.altKey) switchTab('sketch');
   if (e.key === '3' && e.altKey) switchTab('idea');
   if (e.key === '4' && e.altKey) switchTab('qeconvert');
+  if (e.key === '5' && e.altKey) switchTab('qecode');
 });
 
 // ═══════════════════════════════════════════════════════
@@ -2339,7 +2532,10 @@ function copyAcct() {
 
   qualitySlider.addEventListener('input', function(){ qualityVal.textContent = qualitySlider.value; });
 
-  dropzone.addEventListener('click', function(){ folderInput.click(); });
+  const pickFilesBtn = document.getElementById('qc-pickFiles');
+  const pickFolderBtn = document.getElementById('qc-pickFolder');
+  pickFilesBtn.addEventListener('click', function(e){ e.stopPropagation(); fileInput.click(); });
+  pickFolderBtn.addEventListener('click', function(e){ e.stopPropagation(); folderInput.click(); });
 
   ['dragenter','dragover'].forEach(evt => dropzone.addEventListener(evt, function(e){
     e.preventDefault(); dropzone.classList.add('drag');
@@ -2511,6 +2707,134 @@ function copyAcct() {
     a.remove();
     zipBtn.disabled = false;
     zipBtn.textContent = 'Download all (.zip)';
+  });
+})();
+
+// ═══════════════════════════════════════════════════════
+//  QECODE — QR code generator
+// ═══════════════════════════════════════════════════════
+(function(){
+  const typeToggle = document.getElementById('qr-typeToggle');
+  const sizeToggle = document.getElementById('qr-sizeToggle');
+  const swatchWrap = document.getElementById('qr-swatches');
+  const generateBtn = document.getElementById('qr-generateBtn');
+  const downloadBtn = document.getElementById('qr-downloadBtn');
+  const preview = document.getElementById('qr-preview');
+  if (!typeToggle) return; // panel not present, bail safely
+
+  const fieldsets = {
+    url: document.getElementById('qr-fields-url'),
+    text: document.getElementById('qr-fields-text'),
+    wifi: document.getElementById('qr-fields-wifi'),
+    whatsapp: document.getElementById('qr-fields-whatsapp'),
+    contact: document.getElementById('qr-fields-contact')
+  };
+
+  let currentType = 'url';
+  let currentColor = '#0d0d0d';
+  let currentSize = 300;
+  let qrInstance = null;
+
+  typeToggle.addEventListener('click', function(e){
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    [...typeToggle.children].forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentType = btn.dataset.type;
+    Object.keys(fieldsets).forEach(k => {
+      fieldsets[k].style.display = (k === currentType) ? 'block' : 'none';
+    });
+  });
+
+  swatchWrap.addEventListener('click', function(e){
+    const sw = e.target.closest('.qr-swatch');
+    if(!sw) return;
+    [...swatchWrap.children].forEach(s => s.classList.remove('active'));
+    sw.classList.add('active');
+    currentColor = sw.dataset.color;
+  });
+
+  sizeToggle.addEventListener('click', function(e){
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    [...sizeToggle.children].forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSize = parseInt(btn.dataset.size, 10);
+  });
+
+  function buildPayload(){
+    if(currentType === 'url'){
+      const v = document.getElementById('qr-url').value.trim();
+      return v || null;
+    }
+    if(currentType === 'text'){
+      const v = document.getElementById('qr-text').value.trim();
+      return v || null;
+    }
+    if(currentType === 'wifi'){
+      const ssid = document.getElementById('qr-wifi-ssid').value.trim();
+      const pass = document.getElementById('qr-wifi-pass').value.trim();
+      const enc = document.getElementById('qr-wifi-enc').value;
+      if(!ssid) return null;
+      const esc = s => s.replace(/([\\;,:"])/g, '\\$1');
+      if(enc === 'nopass') return `WIFI:T:nopass;S:${esc(ssid)};;`;
+      return `WIFI:T:${enc};S:${esc(ssid)};P:${esc(pass)};;`;
+    }
+    if(currentType === 'whatsapp'){
+      const num = document.getElementById('qr-wa-number').value.replace(/[^0-9]/g, '');
+      const msg = document.getElementById('qr-wa-message').value.trim();
+      if(!num) return null;
+      return `https://wa.me/${num}` + (msg ? `?text=${encodeURIComponent(msg)}` : '');
+    }
+    if(currentType === 'contact'){
+      const name = document.getElementById('qr-c-name').value.trim();
+      const phone = document.getElementById('qr-c-phone').value.trim();
+      const email = document.getElementById('qr-c-email').value.trim();
+      const org = document.getElementById('qr-c-org').value.trim();
+      if(!name) return null;
+      let vcard = 'BEGIN:VCARD\nVERSION:3.0\n';
+      vcard += `FN:${name}\n`;
+      if(org) vcard += `ORG:${org}\n`;
+      if(phone) vcard += `TEL:${phone}\n`;
+      if(email) vcard += `EMAIL:${email}\n`;
+      vcard += 'END:VCARD';
+      return vcard;
+    }
+    return null;
+  }
+
+  generateBtn.addEventListener('click', function(){
+    const payload = buildPayload();
+    if(!payload){
+      preview.innerHTML = '<p style="font-size:0.72rem;color:var(--muted);padding:1rem;">Fill in the required field(s) above first.</p>';
+      downloadBtn.disabled = true;
+      return;
+    }
+    preview.innerHTML = '';
+    qrInstance = new QRCode(preview, {
+      text: payload,
+      width: currentSize,
+      height: currentSize,
+      colorDark: currentColor,
+      colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.H
+    });
+    downloadBtn.disabled = false;
+  });
+
+  downloadBtn.addEventListener('click', function(){
+    const canvas = preview.querySelector('canvas');
+    const img = preview.querySelector('img');
+    let dataUrl = null;
+    if(canvas) dataUrl = canvas.toDataURL('image/png');
+    else if(img && img.src) dataUrl = img.src;
+    if(!dataUrl) return;
+    const a = document.createElement('a');
+    a.href = dataUrl;
+    a.download = 'qecode-' + currentType + '.png';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   });
 })();
 
