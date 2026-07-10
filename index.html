@@ -6,8 +6,8 @@
 
 <!-- ══ PRIMARY SEO ══════════════════════════════════════ -->
 <title>Wimbyblaise | Free Online Note Taker, Sketch Board & Ideation Tool — whatimeant</title>
-<meta name="description" content="Wimbyblaise is a free online note-taking app, sketch board, and ideation tool. Write rich notes, draw sketches, brainstorm with sticky notes, and export to PDF, Word, PNG, JPG, TXT or Markdown — all in your browser, no sign-up needed.">
-<meta name="keywords" content="free note taker, online note taking app, free notepad online, best free notes app, note taking tool, free writing tool, sketch board online, free sketchpad, drawing tool online, ideation board, brainstorm tool, sticky notes online, mind mapping tool, free productivity app, notes without login, browser note taking, free notepad app, digital notebook free, online whiteboard free, free drawing app, canvas sketch tool, export notes to PDF, export notes to Word, export sketch to PNG, free note organizer, note taking for students, note taking for work, free creative writing tool, free brainstorming app, online collaboration board, BERT optimized note app, no account required, free web app, open source note taker, free offline notes, export to markdown, rich text editor free, free text editor online, best free notepad, quick notes online, free ideas board, thought organizer, free planner app, note manager free, write notes online, free document creator, sketch to PDF, ideation tool free, free creative board, sticky notes board, note export tool, idea capture tool, free web notepad, online sketchbook free, digital whiteboard, brainstorming sticky notes, free student notes app, project notes tool, task notes free, free mind board">
+<meta name="description" content="Wimbyblaise is a free online note-taking app, sketch board, ideation tool, and bulk image converter. Write rich notes, draw sketches, brainstorm with sticky notes, convert images to WebP or AVIF, and export to PDF, Word, PNG, JPG, TXT or Markdown — all in your browser, no sign-up needed.">
+<meta name="keywords" content="free note taker, online note taking app, free notepad online, best free notes app, note taking tool, free writing tool, sketch board online, free sketchpad, drawing tool online, ideation board, brainstorm tool, sticky notes online, mind mapping tool, free productivity app, notes without login, browser note taking, free notepad app, digital notebook free, online whiteboard free, free drawing app, canvas sketch tool, export notes to PDF, export notes to Word, export sketch to PNG, free note organizer, note taking for students, note taking for work, free creative writing tool, free brainstorming app, online collaboration board, BERT optimized note app, no account required, free web app, open source note taker, free offline notes, export to markdown, rich text editor free, free text editor online, best free notepad, quick notes online, free ideas board, thought organizer, free planner app, note manager free, write notes online, free document creator, sketch to PDF, ideation tool free, free creative board, sticky notes board, note export tool, idea capture tool, free web notepad, online sketchbook free, digital whiteboard, brainstorming sticky notes, free student notes app, project notes tool, task notes free, free mind board, free image converter, webp converter online, avif converter online, bulk image converter, convert jpg to webp, convert png to webp, no upload image converter, client side image converter">
 <meta name="author" content="Mmadubuko Micheal — Wimbyblaise">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
@@ -58,6 +58,7 @@
     "Free rich-text note taking",
     "Freehand sketch board",
     "Ideation and brainstorming sticky board",
+    "Qeconvert: bulk image to WebP or AVIF converter",
     "Export to PDF",
     "Export to Word document",
     "Export to PNG image",
@@ -69,6 +70,13 @@
     "Keyboard shortcuts",
     "Multiple notes management"
   ],
+  "hasPart": {
+    "@type": "SoftwareApplication",
+    "name": "Qeconvert",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "A free, client-side bulk image converter built into Wimbyblaise. Converts JPG, PNG, BMP, GIF, TIFF and WebP images to WebP or AVIF entirely in the browser — no uploads.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  },
   "author": {
     "@type": "Person",
     "name": "Mmadubuko Micheal",
@@ -109,6 +117,16 @@
       "@type": "Question",
       "name": "Does Wimbyblaise save my notes?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, notes auto-save to your browser's local storage every 30 seconds, and you can also manually save with Ctrl+S." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Wimbyblaise convert images to WebP or AVIF?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Qeconvert tab lets you drop in a folder of images and convert them all to WebP or AVIF, entirely in your browser with no uploads." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Qeconvert upload my images to a server?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Qeconvert converts every image locally using the Canvas API. Your files never leave your device." }
     }
   ]
 }
@@ -128,6 +146,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
   :root {
     --ink: #0d0d0d;
@@ -511,6 +530,103 @@
   }
   .sticky-colors span:hover { transform: scale(1.2); }
 
+  /* ── QECONVERT PANEL ──────────────────────── */
+  #qeconvert-panel {
+    flex: 1;
+    display: none;
+    overflow-y: auto;
+    background: var(--canvas-bg);
+  }
+  #qc-scroll { max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+
+  .qc-header { text-align: center; margin-bottom: 1.6rem; }
+  .qc-header h2 {
+    font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.7rem;
+    letter-spacing: -0.02em; margin: 0 0 8px; color: var(--ink);
+  }
+  .qc-header p {
+    font-size: 0.82rem; color: var(--muted); line-height: 1.7; max-width: 48ch;
+    margin: 0 auto 14px;
+  }
+  .qc-badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .qc-badge {
+    font-size: 0.62rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase;
+    padding: 6px 12px; border-radius: 999px; border: 1.5px solid var(--border); color: var(--muted);
+    display: flex; align-items: center; gap: 5px; background: #fff;
+  }
+  .qc-badge i { color: var(--accent2); }
+
+  .qc-card { background: #fff; border: 1.5px solid var(--border); border-radius: 14px; padding: 1.6rem; }
+
+  .qc-dropzone {
+    border: 1.5px dashed var(--border); border-radius: 10px; padding: 1.8rem 1rem; text-align: center;
+    cursor: pointer; transition: border-color .15s, background .15s;
+  }
+  .qc-dropzone:hover, .qc-dropzone.drag { border-color: var(--accent); background: #fff6ee; }
+  .qc-dz-icon { font-size: 22px; color: var(--accent); margin-bottom: 8px; }
+  .qc-dz-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--ink); margin: 0 0 4px; }
+  .qc-dz-sub { font-size: 0.68rem; color: var(--muted); margin: 0; }
+  #qc-folderInput, #qc-fileInput { display: none; }
+
+  .qc-controls { margin-top: 1.4rem; display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: flex-end; justify-content: space-between; }
+  .qc-field { display: flex; flex-direction: column; gap: 6px; }
+  .qc-field label { font-size: 0.6rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+
+  .qc-segmented { display: flex; border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; width: fit-content; }
+  .qc-segmented button {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; background: #fff; color: var(--muted);
+    border: none; padding: 7px 16px; cursor: pointer; border-right: 1.5px solid var(--border); transition: .15s;
+  }
+  .qc-segmented button:last-child { border-right: none; }
+  .qc-segmented button.active { background: var(--accent); color: #fff; font-weight: 600; }
+  .qc-segmented button:not(.active):hover { color: var(--ink); background: var(--cream); }
+
+  .qc-quality-row { display: flex; align-items: center; gap: 10px; min-width: 180px; }
+  .qc-quality-row input[type=range] {
+    -webkit-appearance: none; flex: 1; height: 3px; background: var(--border); outline: none; border-radius: 3px; accent-color: var(--accent);
+  }
+  .qc-quality-row input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); cursor: pointer; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--border);
+  }
+  .qc-quality-val { font-size: 0.72rem; color: var(--ink); min-width: 28px; text-align: right; font-weight: 600; }
+
+  .qc-notice {
+    margin-top: 14px; font-size: 0.68rem; line-height: 1.6; padding: 9px 12px; border-radius: 8px;
+    border: 1.5px solid #f0c9b8; background: #fff3ee; color: #a34a1e; display: none;
+  }
+  .qc-notice.show { display: block; }
+
+  .qc-actions { margin-top: 1.4rem; display: flex; gap: 10px; flex-wrap: wrap; }
+  .qc-primary, .qc-secondary {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; padding: 10px 18px; cursor: pointer; border-radius: 8px; font-weight: 600;
+  }
+  .qc-primary { background: var(--accent); color: #fff; border: 1.5px solid var(--accent); }
+  .qc-primary:hover { background: #d15304; }
+  .qc-primary:disabled { background: var(--cream); color: var(--muted); border-color: var(--border); cursor: not-allowed; }
+  .qc-secondary { background: #fff; color: var(--ink); border: 1.5px solid var(--border); }
+  .qc-secondary:hover { background: var(--cream); }
+  .qc-secondary:disabled { color: var(--muted); cursor: not-allowed; }
+
+  .qc-contact-sheet {
+    margin-top: 1.4rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1px;
+    background: var(--border); border-radius: 8px; overflow: hidden; border: 1px solid var(--border);
+  }
+  .qc-frame { background: #fff; padding: 8px; display: flex; flex-direction: column; gap: 6px; }
+  .qc-thumb { width: 100%; aspect-ratio: 1/1; object-fit: cover; background: var(--cream); display: block; border-radius: 5px; }
+  .qc-frame .qc-name { font-size: 0.62rem; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .qc-frame .qc-meta { font-size: 0.58rem; color: var(--muted); display: flex; justify-content: space-between; align-items: center; }
+  .qc-frame .qc-meta .qc-status.done { color: var(--accent2); font-weight: 600; }
+  .qc-frame .qc-meta .qc-status.fail { color: #c9184a; }
+  .qc-frame .qc-dl { font-size: 0.58rem; color: var(--accent); text-decoration: none; visibility: hidden; font-weight: 600; }
+  .qc-frame .qc-dl.ready { visibility: visible; }
+  .qc-frame .qc-dl:hover { text-decoration: underline; }
+
+  .qc-summary { margin-top: 1rem; font-size: 0.68rem; color: var(--muted); display: none; }
+  .qc-summary.show { display: block; }
+  .qc-summary b { color: var(--ink); }
+  .qc-privacy-line { margin-top: 1.2rem; font-size: 0.62rem; color: var(--muted); text-align: center; }
+  .qc-privacy-line i { color: var(--accent2); margin-right: 4px; }
+
   /* ── STATUS BAR ───────────────────────────── */
   #statusbar {
     height: 26px;
@@ -686,6 +802,9 @@
     <button class="tab-pill" id="tab-idea" onclick="switchTab('idea')">
       <i class="bi bi-lightbulb"></i> Ideation
     </button>
+    <button class="tab-pill" id="tab-qeconvert" onclick="switchTab('qeconvert')">
+      <i class="bi bi-images"></i> Qeconvert
+    </button>
   </div>
 
   <div class="topbar-actions">
@@ -728,16 +847,29 @@
   <!-- SIDEBAR -->
   <div id="sidebar">
     <!-- New note/sketch buttons -->
-    <div class="sidebar-section">
+    <div class="sidebar-section" id="sidebar-new-section">
       <button class="btn-new" onclick="newItem()">
         <i class="bi bi-plus-lg"></i> <span id="new-btn-label">New Note</span>
       </button>
     </div>
 
     <!-- Note list -->
-    <div class="sidebar-section" style="flex:1;overflow:hidden;display:flex;flex-direction:column;padding-bottom:0;">
+    <div class="sidebar-section" id="sidebar-items-section" style="flex:1;overflow:hidden;display:flex;flex-direction:column;padding-bottom:0;">
       <div class="sidebar-label">Items</div>
       <div class="note-list" id="note-list"></div>
+    </div>
+
+    <!-- Qeconvert info (shown only on Qeconvert tab) -->
+    <div class="sidebar-section" id="sidebar-qeconvert-section" style="display:none;flex:1;overflow-y:auto;">
+      <div class="sidebar-label">About Qeconvert</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        Converts JPG, PNG, BMP, GIF, TIFF and WebP files to WebP or AVIF — fully client-side. Nothing you drop in ever leaves this tab.
+      </p>
+      <div class="sidebar-label mt-2">Formats</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        <strong style="color:var(--ink);">WebP</strong> — works in every modern browser.<br>
+        <strong style="color:var(--ink);">AVIF</strong> — smaller files, needs Chrome 124+.
+      </p>
     </div>
 
     <!-- Sketch tools (hidden unless sketch tab) -->
@@ -864,6 +996,60 @@
     <!-- IDEATION PANEL -->
     <div id="idea-panel">
       <div id="idea-board"></div>
+    </div>
+
+    <!-- QECONVERT PANEL -->
+    <div id="qeconvert-panel">
+      <div id="qc-scroll">
+        <div class="qc-header">
+          <h2>Qeconvert</h2>
+          <p>Drop in a folder of images. Pick WebP or AVIF. Every conversion runs right here in your browser — nothing uploads.</p>
+          <div class="qc-badges">
+            <span class="qc-badge"><i class="bi bi-shield-check"></i> No uploads, ever</span>
+            <span class="qc-badge"><i class="bi bi-lightning-charge-fill"></i> Free, no sign-up</span>
+            <span class="qc-badge"><i class="bi bi-file-earmark-zip"></i> Export as ZIP</span>
+          </div>
+        </div>
+
+        <div class="qc-card">
+          <div class="qc-dropzone" id="qc-dropzone">
+            <div class="qc-dz-icon"><i class="bi bi-images"></i></div>
+            <p class="qc-dz-title">Click to choose an Images folder, or drag images here</p>
+            <p class="qc-dz-sub">JPG, PNG, BMP, GIF, TIFF, WebP accepted</p>
+            <input type="file" id="qc-folderInput" webkitdirectory directory multiple>
+            <input type="file" id="qc-fileInput" multiple accept="image/*">
+          </div>
+
+          <div class="qc-controls">
+            <div class="qc-field">
+              <label>Output format</label>
+              <div class="qc-segmented" id="qc-formatToggle">
+                <button data-fmt="webp" class="active">WebP</button>
+                <button data-fmt="avif">AVIF</button>
+              </div>
+            </div>
+            <div class="qc-field">
+              <label>Quality</label>
+              <div class="qc-quality-row">
+                <input type="range" id="qc-quality" min="10" max="100" value="80" step="1">
+                <span class="qc-quality-val" id="qc-qualityVal">80</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="qc-notice" id="qc-avifNotice">Your browser can't encode AVIF on canvas (Chrome 124+ required). Switch to WebP, or update Chrome.</div>
+
+          <div class="qc-actions">
+            <button class="qc-primary" id="qc-convertBtn" disabled>Convert 0 images</button>
+            <button class="qc-secondary" id="qc-zipBtn" disabled>Download all (.zip)</button>
+          </div>
+
+          <div class="qc-summary" id="qc-summary"></div>
+          <div class="qc-contact-sheet" id="qc-sheet"></div>
+
+          <p class="qc-privacy-line"><i class="bi bi-lock-fill"></i>Everything runs on-device. Leaving this tab discards anything not downloaded.</p>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -1135,15 +1321,19 @@ function init() {
 // ═══════════════════════════════════════════════════════
 function switchTab(tab) {
   currentTab = tab;
-  ['notes','sketch','idea'].forEach(t => {
+  ['notes','sketch','idea','qeconvert'].forEach(t => {
     document.getElementById('tab-'+t).classList.toggle('active', t === tab);
   });
   document.getElementById('note-panel').style.display = tab === 'notes' ? 'flex' : 'none';
   document.getElementById('sketch-panel').style.display = tab === 'sketch' ? 'flex' : 'none';
   document.getElementById('idea-panel').style.display = tab === 'idea' ? 'block' : 'none';
+  document.getElementById('qeconvert-panel').style.display = tab === 'qeconvert' ? 'block' : 'none';
   document.getElementById('sketch-tools').style.display = tab === 'sketch' ? 'block' : 'none';
   document.getElementById('idea-tools').style.display = tab === 'idea' ? 'block' : 'none';
-  document.getElementById('new-btn-label').textContent = tab === 'notes' ? 'New Note' : tab === 'sketch' ? 'Clear Sketch' : 'Add Sticky';
+  document.getElementById('sidebar-new-section').style.display = tab === 'qeconvert' ? 'none' : 'block';
+  document.getElementById('sidebar-items-section').style.display = tab === 'qeconvert' ? 'none' : 'flex';
+  document.getElementById('sidebar-qeconvert-section').style.display = tab === 'qeconvert' ? 'block' : 'none';
+  document.getElementById('new-btn-label').textContent = tab === 'notes' ? 'New Note' : tab === 'sketch' ? 'Clear Sketch' : tab === 'idea' ? 'Add Sticky' : 'New';
   document.getElementById('status-mode').textContent = tab.charAt(0).toUpperCase() + tab.slice(1);
   if (tab === 'sketch') {
     const firstVisit = canvas.width === 0;
@@ -1847,6 +2037,7 @@ document.addEventListener('keydown', e => {
   if (e.key === '1' && e.altKey) switchTab('notes');
   if (e.key === '2' && e.altKey) switchTab('sketch');
   if (e.key === '3' && e.altKey) switchTab('idea');
+  if (e.key === '4' && e.altKey) switchTab('qeconvert');
 });
 
 // ═══════════════════════════════════════════════════════
@@ -2100,6 +2291,228 @@ function copyAcct() {
     setTimeout(() => el.style.display = 'none', 2500);
   });
 }
+
+// ═══════════════════════════════════════════════════════
+//  QECONVERT — bulk image to WebP/AVIF converter
+// ═══════════════════════════════════════════════════════
+(function(){
+  const dropzone = document.getElementById('qc-dropzone');
+  const folderInput = document.getElementById('qc-folderInput');
+  const fileInput = document.getElementById('qc-fileInput');
+  const formatToggle = document.getElementById('qc-formatToggle');
+  const qualitySlider = document.getElementById('qc-quality');
+  const qualityVal = document.getElementById('qc-qualityVal');
+  const convertBtn = document.getElementById('qc-convertBtn');
+  const zipBtn = document.getElementById('qc-zipBtn');
+  const sheet = document.getElementById('qc-sheet');
+  const summary = document.getElementById('qc-summary');
+  const avifNotice = document.getElementById('qc-avifNotice');
+  if (!dropzone) return; // panel not present, bail safely
+
+  const ACCEPTED = /\.(jpe?g|png|bmp|gif|tiff?|webp)$/i;
+  let format = 'webp';
+  let items = [];
+  let avifSupported = null;
+
+  function checkAvifSupport(cb){
+    if(avifSupported !== null) return cb(avifSupported);
+    const c = document.createElement('canvas');
+    c.width = 2; c.height = 2;
+    c.toBlob(function(blob){
+      avifSupported = !!(blob && blob.type === 'image/avif');
+      cb(avifSupported);
+    }, 'image/avif');
+  }
+
+  formatToggle.addEventListener('click', function(e){
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    [...formatToggle.children].forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    format = btn.dataset.fmt;
+    avifNotice.classList.remove('show');
+    if(format === 'avif'){
+      checkAvifSupport(function(ok){ if(!ok) avifNotice.classList.add('show'); });
+    }
+    resetOutputs();
+  });
+
+  qualitySlider.addEventListener('input', function(){ qualityVal.textContent = qualitySlider.value; });
+
+  dropzone.addEventListener('click', function(){ folderInput.click(); });
+
+  ['dragenter','dragover'].forEach(evt => dropzone.addEventListener(evt, function(e){
+    e.preventDefault(); dropzone.classList.add('drag');
+  }));
+  ['dragleave','drop'].forEach(evt => dropzone.addEventListener(evt, function(e){
+    e.preventDefault(); dropzone.classList.remove('drag');
+  }));
+  dropzone.addEventListener('drop', function(e){
+    const files = [...e.dataTransfer.files].filter(f => ACCEPTED.test(f.name));
+    if(files.length) loadFiles(files);
+  });
+
+  folderInput.addEventListener('change', function(){
+    const files = [...folderInput.files].filter(f => ACCEPTED.test(f.name));
+    if(files.length) loadFiles(files);
+    folderInput.value = '';
+  });
+  fileInput.addEventListener('change', function(){
+    const files = [...fileInput.files].filter(f => ACCEPTED.test(f.name));
+    if(files.length) loadFiles(files);
+    fileInput.value = '';
+  });
+
+  function loadFiles(files){
+    items = files.map((file, i) => ({ file, id: 'qcf' + i, blob: null, outSize: null, status: 'queued' }));
+    renderSheet();
+    convertBtn.disabled = false;
+    convertBtn.textContent = 'Convert ' + items.length + ' image' + (items.length === 1 ? '' : 's');
+    zipBtn.disabled = true;
+    summary.classList.remove('show');
+  }
+
+  function resetOutputs(){
+    items.forEach(it => { it.blob = null; it.outSize = null; it.status = 'queued'; });
+    renderSheet();
+    zipBtn.disabled = true;
+    summary.classList.remove('show');
+  }
+
+  function renderSheet(){
+    sheet.innerHTML = '';
+    items.forEach(it => {
+      const frame = document.createElement('div');
+      frame.className = 'qc-frame';
+      frame.id = 'frame-' + it.id;
+
+      const img = document.createElement('img');
+      img.className = 'qc-thumb';
+      img.src = URL.createObjectURL(it.file);
+      img.loading = 'lazy';
+
+      const name = document.createElement('div');
+      name.className = 'qc-name';
+      name.textContent = it.file.name;
+
+      const meta = document.createElement('div');
+      meta.className = 'qc-meta';
+      const status = document.createElement('span');
+      status.className = 'qc-status';
+      status.textContent = statusLabel(it);
+      const dl = document.createElement('a');
+      dl.className = 'qc-dl';
+      dl.textContent = 'download';
+      if(it.blob){
+        dl.href = URL.createObjectURL(it.blob);
+        dl.download = outName(it.file.name);
+        dl.classList.add('ready');
+      }
+      meta.appendChild(status);
+      meta.appendChild(dl);
+
+      frame.appendChild(img);
+      frame.appendChild(name);
+      frame.appendChild(meta);
+      sheet.appendChild(frame);
+    });
+  }
+
+  function statusLabel(it){
+    if(it.status === 'queued') return 'queued';
+    if(it.status === 'working') return 'converting…';
+    if(it.status === 'done') return kb(it.outSize) + ' KB';
+    if(it.status === 'fail') return 'failed';
+    return '';
+  }
+
+  function kb(bytes){ return Math.round(bytes / 102.4) / 10; }
+  function outName(filename){ return filename.replace(/\.[^.]+$/, '') + '.' + format; }
+
+  function updateFrame(it){
+    const frame = document.getElementById('frame-' + it.id);
+    if(!frame) return;
+    const statusEl = frame.querySelector('.qc-status');
+    const dlEl = frame.querySelector('.qc-dl');
+    statusEl.textContent = statusLabel(it);
+    statusEl.classList.toggle('done', it.status === 'done');
+    statusEl.classList.toggle('fail', it.status === 'fail');
+    if(it.blob){
+      dlEl.href = URL.createObjectURL(it.blob);
+      dlEl.download = outName(it.file.name);
+      dlEl.classList.add('ready');
+    }
+  }
+
+  function convertOne(it, quality){
+    return new Promise(function(resolve){
+      const img = new Image();
+      img.onload = function(){
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        const ctx2d = canvas.getContext('2d');
+        ctx2d.drawImage(img, 0, 0);
+        canvas.toBlob(function(blob){
+          if(blob && blob.type === 'image/' + format){
+            it.blob = blob; it.outSize = blob.size; it.status = 'done';
+          } else { it.status = 'fail'; }
+          updateFrame(it);
+          resolve();
+        }, 'image/' + format, quality);
+      };
+      img.onerror = function(){ it.status = 'fail'; updateFrame(it); resolve(); };
+      img.src = URL.createObjectURL(it.file);
+    });
+  }
+
+  convertBtn.addEventListener('click', async function(){
+    if(format === 'avif'){
+      const ok = await new Promise(res => checkAvifSupport(res));
+      if(!ok){ avifNotice.classList.add('show'); return; }
+    }
+    convertBtn.disabled = true;
+    zipBtn.disabled = true;
+    const quality = Math.max(0.1, Math.min(1, qualitySlider.value / 100));
+    let totalIn = 0, totalOut = 0, failed = 0;
+
+    for(const it of items){
+      it.status = 'working';
+      updateFrame(it);
+      await convertOne(it, quality);
+      totalIn += it.file.size;
+      if(it.status === 'done') totalOut += it.outSize;
+      if(it.status === 'fail') failed++;
+    }
+
+    convertBtn.disabled = false;
+    convertBtn.textContent = 'Re-convert ' + items.length + ' image' + (items.length === 1 ? '' : 's');
+    const anyDone = items.some(it => it.status === 'done');
+    zipBtn.disabled = !anyDone;
+
+    const savedPct = totalIn > 0 ? Math.round((1 - totalOut / totalIn) * 100) : 0;
+    summary.innerHTML = '<b>' + (items.length - failed) + '/' + items.length + '</b> converted &nbsp;·&nbsp; ' +
+      kb(totalIn) + ' KB &rarr; <b>' + kb(totalOut) + ' KB</b> &nbsp;·&nbsp; ' +
+      (savedPct >= 0 ? savedPct + '% smaller' : 'larger by ' + (-savedPct) + '%');
+    summary.classList.add('show');
+  });
+
+  zipBtn.addEventListener('click', async function(){
+    zipBtn.disabled = true;
+    zipBtn.textContent = 'Zipping…';
+    const zip = new JSZip();
+    items.filter(it => it.blob).forEach(it => { zip.file(outName(it.file.name), it.blob); });
+    const content = await zip.generateAsync({ type: 'blob' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(content);
+    a.download = 'Qeconvert_' + format + '.zip';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    zipBtn.disabled = false;
+    zipBtn.textContent = 'Download all (.zip)';
+  });
+})();
 
 init();
 </script>
