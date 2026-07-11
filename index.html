@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="google-site-verification" content="Vg-rb1FG8ekCQvnC-NTKjHmiAcc7MEBDApgzGkpMmhs" />
+
 <!-- ══ PRIMARY SEO ══════════════════════════════════════ -->
 <title>Wimbyblaise | Free Online Note Taker, Sketch Board & Ideation Tool — whatimeant</title>
 <meta name="description" content="Wimbyblaise is a free online note-taking app, sketch board, ideation tool, bulk image converter, and QR code generator. Write rich notes, draw sketches, brainstorm with sticky notes, convert images to WebP or AVIF, generate QR codes for links and WiFi, and export to PDF, Word, PNG, JPG, TXT or Markdown — all in your browser, no sign-up needed.">
@@ -873,6 +873,51 @@
   .qc-strength-label { font-size: 0.62rem; color: var(--muted); margin-top: 4px; }
   .qc-checkbox-row { display: flex; align-items: center; gap: 7px; font-size: 0.72rem; color: var(--ink); padding: 5px 0; cursor: pointer; }
   .qc-checkbox-row input { accent-color: var(--accent); width: 15px; height: 15px; cursor: pointer; }
+
+  /* ── QECLOCK ────────────────────────────────── */
+  .qk-zone-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-top: 1.2rem; }
+  .qk-zone-card {
+    background: #fff; border: 1.5px solid var(--border); border-radius: 10px; padding: 14px;
+    position: relative; transition: border-color .15s;
+  }
+  .qk-zone-card:hover { border-color: var(--accent); }
+  .qk-zone-city { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.85rem; color: var(--ink); margin-bottom: 2px; }
+  .qk-zone-offset { font-size: 0.6rem; color: var(--muted); margin-bottom: 8px; }
+  .qk-zone-time { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 600; color: var(--ink); letter-spacing: -0.5px; }
+  .qk-zone-date { font-size: 0.62rem; color: var(--muted); margin-top: 2px; }
+  .qk-zone-remove {
+    position: absolute; top: 8px; right: 8px; background: none; border: none; color: var(--muted);
+    cursor: pointer; font-size: 0.75rem; padding: 3px 5px; border-radius: 4px; transition: all .12s;
+  }
+  .qk-zone-remove:hover { color: #c9184a; background: rgba(201,24,74,0.08); }
+  .qk-add-row { display: flex; gap: 8px; margin-top: 1.2rem; flex-wrap: wrap; }
+  .qk-add-row select { flex: 1; min-width: 180px; }
+  .qk-planner-result {
+    margin-top: 10px; display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 12px; background: var(--cream); border-radius: 7px; font-size: 0.72rem;
+  }
+  .qk-planner-result .qk-pr-city { font-weight: 600; color: var(--ink); }
+  .qk-planner-result .qk-pr-time { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+
+  /* ── QETRACK ────────────────────────────────── */
+  .qt-timer-display {
+    font-family: 'Syne', sans-serif; font-size: 3.2rem; font-weight: 800; text-align: center;
+    color: var(--ink); letter-spacing: -1px; margin: 0.6rem 0;
+  }
+  .qt-log-list { margin-top: 1rem; display: flex; flex-direction: column; gap: 6px; max-height: 320px; overflow-y: auto; }
+  .qt-log-item {
+    display: flex; align-items: center; gap: 10px; padding: 9px 12px; background: #fff;
+    border: 1.5px solid var(--border); border-radius: 8px; font-size: 0.72rem;
+  }
+  .qt-log-item .qt-log-task { font-weight: 600; color: var(--ink); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .qt-log-item .qt-log-dur { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 600; }
+  .qt-log-item .qt-log-when { color: var(--muted); font-size: 0.62rem; white-space: nowrap; }
+  .qt-log-item .qt-log-del { background: none; border: none; color: var(--muted); cursor: pointer; padding: 2px 4px; }
+  .qt-log-item .qt-log-del:hover { color: #c9184a; }
+  .qt-totals-row { display: flex; gap: 1.4rem; margin-top: 1.2rem; padding-top: 1rem; border-top: 1.5px solid var(--border); flex-wrap: wrap; }
+  .qt-total-box { text-align: center; }
+  .qt-total-box .qt-total-val { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--ink); }
+  .qt-total-box .qt-total-label { font-size: 0.58rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -908,6 +953,12 @@
     </button>
     <button class="tab-pill" id="tab-qehash" onclick="switchTab('qehash')">
       <i class="bi bi-hash"></i> Qehash
+    </button>
+    <button class="tab-pill" id="tab-qeclock" onclick="switchTab('qeclock')">
+      <i class="bi bi-globe2"></i> Qeclock
+    </button>
+    <button class="tab-pill" id="tab-qetrack" onclick="switchTab('qetrack')">
+      <i class="bi bi-stopwatch"></i> Qetrack
     </button>
   </div>
 
@@ -1021,6 +1072,30 @@
       <div class="sidebar-label mt-2">Tip</div>
       <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
         Useful for verifying file/text integrity or generating stable IDs — not for hashing passwords for storage.
+      </p>
+    </div>
+
+    <!-- Qeclock info -->
+    <div class="sidebar-section" id="sidebar-qeclock-section" style="display:none;flex:1;overflow-y:auto;">
+      <div class="sidebar-label">About Qeclock</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        A world clock and meeting planner. Add the cities your team, clients, or partners are in, and see everyone's local time at a glance.
+      </p>
+      <div class="sidebar-label mt-2">Tip</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        Use the meeting planner to pick one time and instantly see what it means for everyone else, before you send the invite.
+      </p>
+    </div>
+
+    <!-- Qetrack info -->
+    <div class="sidebar-section" id="sidebar-qetrack-section" style="display:none;flex:1;overflow-y:auto;">
+      <div class="sidebar-label">About Qetrack</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        A simple time tracker for work sessions, billable hours, or focused tasks. Start a timer, stop it when you're done, and it's logged automatically.
+      </p>
+      <div class="sidebar-label mt-2">Tip</div>
+      <p style="font-size:0.66rem;color:var(--muted);line-height:1.7;">
+        Add an hourly rate to a task to see estimated earnings — totally optional, leave it blank to just track time.
       </p>
     </div>
 
@@ -1462,6 +1537,91 @@
       </div>
     </div>
 
+    <!-- QECLOCK PANEL -->
+    <div id="qeclock-panel" style="flex:1;display:none;overflow-y:auto;background:var(--canvas-bg);">
+      <div style="max-width:760px;margin:0 auto;padding:2rem 1.5rem 3rem;">
+        <div class="qc-header">
+          <h2>Qeclock</h2>
+          <p>A world clock for the cities you actually work with — plus a meeting planner so you never send a 3am invite again.</p>
+          <div class="qc-badges">
+            <span class="qc-badge"><i class="bi bi-shield-check"></i> No uploads, ever</span>
+            <span class="qc-badge"><i class="bi bi-lightning-charge-fill"></i> Free, no sign-up</span>
+            <span class="qc-badge"><i class="bi bi-clock-history"></i> Live updating</span>
+          </div>
+        </div>
+
+        <div class="qc-card">
+          <div class="qk-add-row">
+            <select class="qr-input" id="qk-zoneSelect"></select>
+            <button class="qc-primary" id="qk-addBtn" style="white-space:nowrap;"><i class="bi bi-plus-lg"></i> Add city</button>
+          </div>
+          <div class="qk-zone-grid" id="qk-zoneGrid"></div>
+          <p id="qk-emptyMsg" style="font-size:0.72rem;color:var(--muted);text-align:center;margin-top:1rem;">Add a city above to start your world clock.</p>
+        </div>
+
+        <div class="qc-card" style="margin-top:1.4rem;">
+          <div class="qc-header" style="margin-bottom:1rem;">
+            <h2 style="font-size:1.15rem;">Meeting Planner</h2>
+            <p style="max-width:none;">Pick a date and time in your own local time zone — see what it is everywhere else.</p>
+          </div>
+          <div class="qr-fieldset" style="margin-top:0;">
+            <label class="qr-label">Meeting time (your local time)</label>
+            <input class="qr-input" id="qk-plannerTime" type="datetime-local">
+          </div>
+          <div id="qk-plannerResults" style="margin-top:0.6rem;"></div>
+        </div>
+
+        <p class="qc-privacy-line"><i class="bi bi-lock-fill"></i>All times are computed locally in your browser using your device's clock.</p>
+      </div>
+    </div>
+
+    <!-- QETRACK PANEL -->
+    <div id="qetrack-panel" style="flex:1;display:none;overflow-y:auto;background:var(--canvas-bg);">
+      <div style="max-width:640px;margin:0 auto;padding:2rem 1.5rem 3rem;">
+        <div class="qc-header">
+          <h2>Qetrack</h2>
+          <p>A simple stopwatch for work sessions and billable hours — start it, stop it, it's logged.</p>
+          <div class="qc-badges">
+            <span class="qc-badge"><i class="bi bi-shield-check"></i> No uploads, ever</span>
+            <span class="qc-badge"><i class="bi bi-lightning-charge-fill"></i> Free, no sign-up</span>
+            <span class="qc-badge"><i class="bi bi-filetype-csv"></i> Export as CSV</span>
+          </div>
+        </div>
+
+        <div class="qc-card">
+          <div class="qr-fieldset" style="margin-top:0;">
+            <label class="qr-label">Task name</label>
+            <input class="qr-input" id="qt-taskName" type="text" placeholder="Client call, invoice writing, design review…">
+          </div>
+          <div class="qr-fieldset">
+            <label class="qr-label">Hourly rate <span style="text-transform:none;font-weight:400;">(optional — leave blank to just track time)</span></label>
+            <input class="qr-input" id="qt-rate" type="number" min="0" step="0.01" placeholder="e.g. 25">
+          </div>
+
+          <div class="qt-timer-display" id="qt-display">00:00:00</div>
+
+          <div class="qc-actions" style="justify-content:center;">
+            <button class="qc-primary" id="qt-startBtn"><i class="bi bi-play-fill"></i> Start</button>
+            <button class="qc-secondary" id="qt-stopBtn" disabled><i class="bi bi-stop-fill"></i> Stop &amp; Log</button>
+            <button class="qc-secondary" id="qt-resetBtn"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
+          </div>
+
+          <div class="qt-totals-row" id="qt-totals" style="display:none;">
+            <div class="qt-total-box"><div class="qt-total-val" id="qt-totalTime">0h 0m</div><div class="qt-total-label">Today</div></div>
+            <div class="qt-total-box" id="qt-earningsBox" style="display:none;"><div class="qt-total-val" id="qt-totalEarnings">$0</div><div class="qt-total-label">Est. earnings</div></div>
+            <div class="qt-total-box" style="margin-left:auto;">
+              <button class="qc-secondary" id="qt-exportBtn" style="padding:6px 12px;font-size:0.65rem;"><i class="bi bi-download"></i> Export CSV</button>
+            </div>
+          </div>
+
+          <div class="qt-log-list" id="qt-logList"></div>
+          <p id="qt-emptyMsg" style="font-size:0.72rem;color:var(--muted);text-align:center;margin-top:1rem;">Your logged sessions will show up here.</p>
+
+          <p class="qc-privacy-line"><i class="bi bi-lock-fill"></i>Your time log is saved only in this browser, never uploaded anywhere.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -1731,7 +1891,7 @@ function init() {
 // ═══════════════════════════════════════════════════════
 function switchTab(tab) {
   currentTab = tab;
-  ['notes','sketch','idea','qeconvert','qecode','qelink','qepass','qehash'].forEach(t => {
+  ['notes','sketch','idea','qeconvert','qecode','qelink','qepass','qehash','qeclock','qetrack'].forEach(t => {
     document.getElementById('tab-'+t).classList.toggle('active', t === tab);
   });
   document.getElementById('note-panel').style.display = tab === 'notes' ? 'flex' : 'none';
@@ -1742,9 +1902,11 @@ function switchTab(tab) {
   document.getElementById('qelink-panel').style.display = tab === 'qelink' ? 'block' : 'none';
   document.getElementById('qepass-panel').style.display = tab === 'qepass' ? 'block' : 'none';
   document.getElementById('qehash-panel').style.display = tab === 'qehash' ? 'block' : 'none';
+  document.getElementById('qeclock-panel').style.display = tab === 'qeclock' ? 'block' : 'none';
+  document.getElementById('qetrack-panel').style.display = tab === 'qetrack' ? 'block' : 'none';
   document.getElementById('sketch-tools').style.display = tab === 'sketch' ? 'block' : 'none';
   document.getElementById('idea-tools').style.display = tab === 'idea' ? 'block' : 'none';
-  const utilityTab = (tab === 'qeconvert' || tab === 'qecode' || tab === 'qelink' || tab === 'qepass' || tab === 'qehash');
+  const utilityTab = (tab === 'qeconvert' || tab === 'qecode' || tab === 'qelink' || tab === 'qepass' || tab === 'qehash' || tab === 'qeclock' || tab === 'qetrack');
   document.getElementById('sidebar-new-section').style.display = utilityTab ? 'none' : 'block';
   document.getElementById('sidebar-items-section').style.display = utilityTab ? 'none' : 'flex';
   document.getElementById('sidebar-qeconvert-section').style.display = tab === 'qeconvert' ? 'block' : 'none';
@@ -1752,6 +1914,8 @@ function switchTab(tab) {
   document.getElementById('sidebar-qelink-section').style.display = tab === 'qelink' ? 'block' : 'none';
   document.getElementById('sidebar-qepass-section').style.display = tab === 'qepass' ? 'block' : 'none';
   document.getElementById('sidebar-qehash-section').style.display = tab === 'qehash' ? 'block' : 'none';
+  document.getElementById('sidebar-qeclock-section').style.display = tab === 'qeclock' ? 'block' : 'none';
+  document.getElementById('sidebar-qetrack-section').style.display = tab === 'qetrack' ? 'block' : 'none';
   document.getElementById('new-btn-label').textContent = tab === 'notes' ? 'New Note' : tab === 'sketch' ? 'Clear Sketch' : tab === 'idea' ? 'Add Sticky' : 'New';
   document.getElementById('status-mode').textContent = tab.charAt(0).toUpperCase() + tab.slice(1);
   if (tab === 'sketch') {
@@ -2461,6 +2625,8 @@ document.addEventListener('keydown', e => {
   if (e.key === '6' && e.altKey) switchTab('qelink');
   if (e.key === '7' && e.altKey) switchTab('qepass');
   if (e.key === '8' && e.altKey) switchTab('qehash');
+  if (e.key === '9' && e.altKey) switchTab('qeclock');
+  if (e.key === '0' && e.altKey) switchTab('qetrack');
 });
 
 // ═══════════════════════════════════════════════════════
@@ -3311,6 +3477,317 @@ function copyAcct() {
       document.execCommand('copy');
     });
   });
+})();
+
+// ═══════════════════════════════════════════════════════
+//  QECLOCK — world clock + meeting planner
+// ═══════════════════════════════════════════════════════
+(function(){
+  const zoneSelect = document.getElementById('qk-zoneSelect');
+  if (!zoneSelect) return; // panel not present, bail safely
+  const addBtn = document.getElementById('qk-addBtn');
+  const grid = document.getElementById('qk-zoneGrid');
+  const emptyMsg = document.getElementById('qk-emptyMsg');
+  const plannerTime = document.getElementById('qk-plannerTime');
+  const plannerResults = document.getElementById('qk-plannerResults');
+
+  const ZONES = [
+    { tz: 'America/Los_Angeles', city: 'Los Angeles' },
+    { tz: 'America/Denver', city: 'Denver' },
+    { tz: 'America/Chicago', city: 'Chicago' },
+    { tz: 'America/New_York', city: 'New York' },
+    { tz: 'America/Sao_Paulo', city: 'São Paulo' },
+    { tz: 'Europe/London', city: 'London' },
+    { tz: 'Europe/Paris', city: 'Paris' },
+    { tz: 'Europe/Berlin', city: 'Berlin' },
+    { tz: 'Africa/Lagos', city: 'Lagos' },
+    { tz: 'Africa/Cairo', city: 'Cairo' },
+    { tz: 'Africa/Johannesburg', city: 'Johannesburg' },
+    { tz: 'Asia/Dubai', city: 'Dubai' },
+    { tz: 'Asia/Karachi', city: 'Karachi' },
+    { tz: 'Asia/Kolkata', city: 'Mumbai / New Delhi' },
+    { tz: 'Asia/Dhaka', city: 'Dhaka' },
+    { tz: 'Asia/Bangkok', city: 'Bangkok' },
+    { tz: 'Asia/Singapore', city: 'Singapore' },
+    { tz: 'Asia/Shanghai', city: 'Beijing / Shanghai' },
+    { tz: 'Asia/Tokyo', city: 'Tokyo' },
+    { tz: 'Asia/Seoul', city: 'Seoul' },
+    { tz: 'Australia/Sydney', city: 'Sydney' },
+    { tz: 'Pacific/Auckland', city: 'Auckland' }
+  ];
+
+  let myZones = [];
+  let tickTimer = null;
+
+  function populateSelect(){
+    zoneSelect.innerHTML = ZONES
+      .filter(z => !myZones.includes(z.tz))
+      .map(z => `<option value="${z.tz}">${z.city}</option>`)
+      .join('');
+  }
+
+  function offsetLabel(tz){
+    try {
+      const fmt = new Intl.DateTimeFormat('en-US', { timeZone: tz, timeZoneName: 'shortOffset' });
+      const parts = fmt.formatToParts(new Date());
+      const off = parts.find(p => p.type === 'timeZoneName');
+      return off ? off.value : '';
+    } catch(e){ return ''; }
+  }
+
+  function renderZones(){
+    grid.innerHTML = '';
+    emptyMsg.style.display = myZones.length ? 'none' : 'block';
+    myZones.forEach(tz => {
+      const meta = ZONES.find(z => z.tz === tz) || { city: tz };
+      const card = document.createElement('div');
+      card.className = 'qk-zone-card';
+      card.dataset.tz = tz;
+      card.innerHTML = `
+        <button class="qk-zone-remove" title="Remove"><i class="bi bi-x-lg"></i></button>
+        <div class="qk-zone-city">${meta.city}</div>
+        <div class="qk-zone-offset">${offsetLabel(tz)}</div>
+        <div class="qk-zone-time" data-time></div>
+        <div class="qk-zone-date" data-date></div>
+      `;
+      card.querySelector('.qk-zone-remove').addEventListener('click', () => {
+        myZones = myZones.filter(z => z !== tz);
+        saveZones();
+        populateSelect();
+        renderZones();
+        renderPlanner();
+      });
+      grid.appendChild(card);
+    });
+    tickClocks();
+  }
+
+  function tickClocks(){
+    grid.querySelectorAll('.qk-zone-card').forEach(card => {
+      const tz = card.dataset.tz;
+      const now = new Date();
+      const timeStr = new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true }).format(now);
+      const dateStr = new Intl.DateTimeFormat('en-US', { timeZone: tz, weekday: 'short', month: 'short', day: 'numeric' }).format(now);
+      card.querySelector('[data-time]').textContent = timeStr;
+      card.querySelector('[data-date]').textContent = dateStr;
+    });
+  }
+
+  function renderPlanner(){
+    plannerResults.innerHTML = '';
+    if(!plannerTime.value || myZones.length === 0) return;
+    const baseDate = new Date(plannerTime.value); // interpreted in local device time
+    myZones.forEach(tz => {
+      const meta = ZONES.find(z => z.tz === tz) || { city: tz };
+      const timeStr = new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: true, weekday: 'short', month: 'short', day: 'numeric' }).format(baseDate);
+      const row = document.createElement('div');
+      row.className = 'qk-planner-result';
+      row.innerHTML = `<span class="qk-pr-city">${meta.city}</span><span class="qk-pr-time">${timeStr}</span>`;
+      plannerResults.appendChild(row);
+    });
+  }
+
+  addBtn.addEventListener('click', function(){
+    const tz = zoneSelect.value;
+    if(!tz || myZones.includes(tz)) return;
+    myZones.push(tz);
+    saveZones();
+    populateSelect();
+    renderZones();
+    renderPlanner();
+  });
+
+  plannerTime.addEventListener('input', renderPlanner);
+
+  function saveZones(){
+    try { localStorage.setItem('wb_qeclock_zones', JSON.stringify(myZones)); } catch(e){}
+  }
+  function loadZones(){
+    try {
+      const raw = localStorage.getItem('wb_qeclock_zones');
+      myZones = raw ? JSON.parse(raw) : ['Africa/Lagos','Europe/London','America/New_York'];
+    } catch(e){ myZones = ['Africa/Lagos','Europe/London','America/New_York']; }
+  }
+
+  loadZones();
+  populateSelect();
+  renderZones();
+  tickTimer = setInterval(tickClocks, 1000);
+
+  // Default planner time = now, rounded to next 30 min, in local input format
+  const now = new Date();
+  now.setMinutes(now.getMinutes() + (30 - now.getMinutes() % 30), 0, 0);
+  const pad = n => String(n).padStart(2,'0');
+  plannerTime.value = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
+})();
+
+// ═══════════════════════════════════════════════════════
+//  QETRACK — time tracker / stopwatch
+// ═══════════════════════════════════════════════════════
+(function(){
+  const taskNameEl = document.getElementById('qt-taskName');
+  if (!taskNameEl) return; // panel not present, bail safely
+  const rateEl = document.getElementById('qt-rate');
+  const display = document.getElementById('qt-display');
+  const startBtn = document.getElementById('qt-startBtn');
+  const stopBtn = document.getElementById('qt-stopBtn');
+  const resetBtn = document.getElementById('qt-resetBtn');
+  const logList = document.getElementById('qt-logList');
+  const emptyMsg = document.getElementById('qt-emptyMsg');
+  const totalsRow = document.getElementById('qt-totals');
+  const totalTimeEl = document.getElementById('qt-totalTime');
+  const earningsBox = document.getElementById('qt-earningsBox');
+  const totalEarningsEl = document.getElementById('qt-totalEarnings');
+  const exportBtn = document.getElementById('qt-exportBtn');
+
+  let running = false;
+  let startTs = null;
+  let elapsedMs = 0;
+  let tickInterval = null;
+  let log = [];
+
+  function fmtHMS(ms){
+    const totalSec = Math.floor(ms / 1000);
+    const h = String(Math.floor(totalSec / 3600)).padStart(2,'0');
+    const m = String(Math.floor((totalSec % 3600) / 60)).padStart(2,'0');
+    const s = String(totalSec % 60).padStart(2,'0');
+    return `${h}:${m}:${s}`;
+  }
+
+  function tick(){
+    const now = Date.now();
+    display.textContent = fmtHMS(now - startTs);
+  }
+
+  startBtn.addEventListener('click', function(){
+    if(running) return;
+    running = true;
+    startTs = Date.now();
+    tickInterval = setInterval(tick, 1000);
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+    startBtn.innerHTML = '<i class="bi bi-play-fill"></i> Running…';
+  });
+
+  stopBtn.addEventListener('click', function(){
+    if(!running) return;
+    running = false;
+    clearInterval(tickInterval);
+    const durationMs = Date.now() - startTs;
+    display.textContent = '00:00:00';
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    startBtn.innerHTML = '<i class="bi bi-play-fill"></i> Start';
+
+    const task = taskNameEl.value.trim() || 'Untitled task';
+    const rate = parseFloat(rateEl.value);
+    const entry = {
+      id: Date.now(),
+      task,
+      durationMs,
+      rate: isNaN(rate) ? null : rate,
+      startedAt: new Date(startTs).toISOString(),
+      endedAt: new Date().toISOString()
+    };
+    log.unshift(entry);
+    saveLog();
+    renderLog();
+  });
+
+  resetBtn.addEventListener('click', function(){
+    if(running){
+      clearInterval(tickInterval);
+      running = false;
+      startBtn.disabled = false;
+      stopBtn.disabled = true;
+      startBtn.innerHTML = '<i class="bi bi-play-fill"></i> Start';
+    }
+    display.textContent = '00:00:00';
+  });
+
+  function isToday(iso){
+    const d = new Date(iso);
+    const now = new Date();
+    return d.toDateString() === now.toDateString();
+  }
+
+  function renderLog(){
+    logList.innerHTML = '';
+    emptyMsg.style.display = log.length ? 'none' : 'block';
+    totalsRow.style.display = log.length ? 'flex' : 'none';
+
+    let todayMs = 0, todayEarnings = 0, anyRate = false;
+
+    log.forEach(entry => {
+      const item = document.createElement('div');
+      item.className = 'qt-log-item';
+      const hrs = entry.durationMs / 3600000;
+      const earn = entry.rate != null ? (hrs * entry.rate) : null;
+      const when = new Date(entry.startedAt).toLocaleString([], { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
+      item.innerHTML = `
+        <span class="qt-log-task">${entry.task}</span>
+        <span class="qt-log-dur">${fmtHMS(entry.durationMs)}</span>
+        ${earn != null ? `<span class="qt-log-dur" style="color:var(--accent2);">$${earn.toFixed(2)}</span>` : ''}
+        <span class="qt-log-when">${when}</span>
+        <button class="qt-log-del" title="Delete"><i class="bi bi-trash3"></i></button>
+      `;
+      item.querySelector('.qt-log-del').addEventListener('click', () => {
+        log = log.filter(e => e.id !== entry.id);
+        saveLog();
+        renderLog();
+      });
+      logList.appendChild(item);
+
+      if(isToday(entry.startedAt)){
+        todayMs += entry.durationMs;
+        if(entry.rate != null){ anyRate = true; todayEarnings += earn; }
+      }
+    });
+
+    const th = Math.floor(todayMs / 3600000);
+    const tm = Math.floor((todayMs % 3600000) / 60000);
+    totalTimeEl.textContent = `${th}h ${tm}m`;
+    earningsBox.style.display = anyRate ? 'block' : 'none';
+    totalEarningsEl.textContent = '$' + todayEarnings.toFixed(2);
+  }
+
+  exportBtn.addEventListener('click', function(){
+    if(!log.length){ alert('No sessions logged yet.'); return; }
+    let csv = 'Task,Duration (HH:MM:SS),Hourly Rate,Earnings,Started,Ended\n';
+    log.forEach(entry => {
+      const hrs = entry.durationMs / 3600000;
+      const earn = entry.rate != null ? (hrs * entry.rate).toFixed(2) : '';
+      const row = [
+        `"${entry.task.replace(/"/g,'""')}"`,
+        fmtHMS(entry.durationMs),
+        entry.rate != null ? entry.rate : '',
+        earn,
+        new Date(entry.startedAt).toLocaleString(),
+        new Date(entry.endedAt).toLocaleString()
+      ];
+      csv += row.join(',') + '\n';
+    });
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'qetrack-log.csv';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  });
+
+  function saveLog(){
+    try { localStorage.setItem('wb_qetrack_log', JSON.stringify(log)); } catch(e){}
+  }
+  function loadLog(){
+    try {
+      const raw = localStorage.getItem('wb_qetrack_log');
+      log = raw ? JSON.parse(raw) : [];
+    } catch(e){ log = []; }
+  }
+
+  loadLog();
+  renderLog();
 })();
 
 init();
